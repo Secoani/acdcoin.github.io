@@ -1,4 +1,10 @@
 // script.js
 document.addEventListener('DOMContentLoaded', () => {
-    alert('Welcome to my website!');
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            alert(`Navigating to ${link.textContent}`);
+        });
+    });
 });
+
