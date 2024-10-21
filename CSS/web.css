@@ -1,3 +1,4 @@
+/* web.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
@@ -26,6 +27,13 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: #4CAF50;
+    transform: scale(1.1);
 }
 main {
     padding: 20px;
