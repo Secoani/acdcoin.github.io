@@ -37,6 +37,7 @@
             border-radius: 5px;
         }
         button {
+            
             padding: 10px;
             background: #28a745;
             color: #fff;
@@ -47,10 +48,18 @@
         button:hover {
             background: #218838;
         }
+        .back-button {
+            margin-bottom: 20px;
+            background: #28a745;
+        }
+        .back-button:hover {
+            background: #28a745;
+        }
     </style>
 </head>
 <body>
     <div class="container">
+        <button class="back-button" onclick="history.back()">← Back</button>
         <h1>ADcoin Transaction</h1>
         <form>
             <label for="sender">Sender Address</label>
