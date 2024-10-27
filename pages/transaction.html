@@ -4,28 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icon.jpeg" type="image/jpeg">
+    <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
     <title>ADcoin Transaction Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/transactionstyle.css">
-    <script>
-        function validateForm(event) {
-            event.preventDefault();
-            const sender = document.getElementById('sender').value;
-            const receiver = document.getElementById('receiver').value;
-            const amount = document.getElementById('amount').value;
-            if (!sender || !receiver || amount <= 0) {
-                alert('Please fill out all fields correctly.');
-            } else {
-                alert('Transaction submitted!');
-                // Submit the form or perform further actions here
-            }
-        }
-    </script>
+    <script src="../scripts/transaction.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <a href="web.html" class="back-button">← Back</a>
+        <a href="../index.html" class="back-button">← Back</a>
         <h1>ADcoin Transaction</h1>
         <form onsubmit="validateForm(event)">
             <label for="sender">Sender Address 
