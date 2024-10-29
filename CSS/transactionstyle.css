@@ -60,6 +60,7 @@ button:hover {
     border-radius: 6px;
     margin-bottom: 20px;
     text-align: center;
+    transition: 100ms al ease-in-out;
 }
 .back-button:hover {
     background: #5a6268;
@@ -69,6 +70,7 @@ button:hover {
     display: inline-block;
     cursor: help;
     margin-left: 5px;
+    transition: 100ms al ease-in-out;
 }
 .tooltip .tooltip-text {
     visibility: hidden;
