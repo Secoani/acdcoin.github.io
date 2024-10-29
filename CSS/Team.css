@@ -84,7 +84,6 @@ header nav {
     background-color: #fff;
     color: #000;
     text-align: center;
-    float: left;
     border: 3px solid #000;
     transition: 300ms all ease-in-out;
 }
@@ -92,14 +91,27 @@ header nav {
     display: none;    
 }
 
+.main-content .box{
+    transition-delay: 1s;
+    transition-property:margin-right;
+    display: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.main-content .card:hover .box{
+    display: block;
+}
+
+.main-content .card .text {
+    transition:display 1s all ease-in-out ;
+}
+
 .main-content .box img{
     display: inline;
     width: 20%;
-    height: 20%;
-    margin-top: 50px;
-    
+    height: 20%;  
 }
-
 .card img{
     width:100%;
     height: 300px;
