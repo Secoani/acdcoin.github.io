@@ -11,15 +11,13 @@ body {
 .back-button {
     display: inline-block;
     padding: 10px;
-    background: green;
+    background: darkgreen;
     color: #fff;
     text-decoration: none;
     border-radius: 6px;
     margin-bottom: 20px;
     text-align: center;
-}
-.back-button:hover {
-    background-color: greenyellow;
+    transition: 100ms all ease-in-out;
 }
 .container {
     background-color: #fff;
@@ -39,6 +37,7 @@ body {
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
+    transition: 100ms all ease-in-out;
 }
 .btn-download:hover {
     background-color: #0056b3;
