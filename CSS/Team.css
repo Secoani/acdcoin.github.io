@@ -87,26 +87,25 @@ header nav {
     border: 3px solid #000;
     transition: 300ms all ease-in-out;
 }
-.main-content .card:hover .text{
-    display: none;    
+.main-content .card .text {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
 }
 
-.main-content .box{
-    transition-delay: 1s;
-    transition-property:margin-right;
-    display: none;
+.main-content .card:hover .text {
+    opacity: 0;
+}
+
+.main-content .box {
+    opacity: 0;
     margin-top: 15px;
     cursor: pointer;
+    transition: opacity 300ms ease-in-out, margin-right 1s ease-in-out;
 }
 
-.main-content .card:hover .box{
-    display: block;
+.main-content .card:hover .box {
+    opacity: 1;
 }
-
-.main-content .card .text {
-    transition:display 1s all ease-in-out ;
-}
-
 .main-content .box img{
     display: inline;
     width: 20%;
@@ -128,20 +127,6 @@ header nav {
 .card .text h4 {
     margin-top: -1px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
     background-color: #333;
     color: white;
