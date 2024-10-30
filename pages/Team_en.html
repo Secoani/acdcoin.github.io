@@ -10,31 +10,28 @@
 <body>
 
     <header>
-        <div class="wrapper">
-           <div class="container">
-               <div id="branding">
-                   <h1><a href="../index_en.html">ACDcoin</a></h1>
-               </div>
-               <nav>
-                   <ul>
-                       <li><a href="../index_en.html">Home</a></li>
-                       <li><a href="mining_en.html">Mining</a></li>
-                       <li class="open"><a href="Aboutus_en.html">About Us</a>
-                          <div class="box">
-                               <ul>
-                                   <li class="element"><a href="contact_en.html">Contact</a></li>
-                                   <li><a href="Team_en.html">Team</a></li>
-                               </ul>
-                          </div>
-                       </li>
-                       <li><a href="transaction_en.html">Transactions</a></li>
-                       <li><a href="download_en.html">Download</a></li>
-                   </ul>
-               </nav>
-           </div>
-       </div>
-   </header>
-
+        <div class="container">
+            <div id="branding">
+                <h1><a href="../index_en.html">ACDcoin</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index_en.html">Home</a></li>
+                    <li><a href="mining_en.html">Mining</a></li>
+                    <li class="open"><a href="Aboutus_en.html">About Us</a>
+                       <div class="box">
+                            <ul>
+                                <li class="element"><a href="contact_en.html">Contact</a></li>
+                                <li><a href="Team_en.html">Team</a></li>
+                            </ul>
+                       </div>
+                    </li>
+                    <li><a href="transaction_en.html">Transactions</a></li>
+                    <li><a href="download_en.html">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
    <div class="main-content" style="transition: 300ms all ease-in-out;">
         <div class="card">
@@ -90,25 +87,26 @@
                 </div>
             </div>
         </div>
-
     </div>
+
+
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
-            <option value="tr">Türkçe</option>
+            <option value="tr">Turkish</option>
             <option value="en" selected>English</option>
         </select>
     </footer>
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "en") {
-                window.location.href = "Team_en.html";
-            } else {
+            if (lang === "tr"){
                 window.location.href = "Team_tr.html";
+            }
+            else{
+                window.location.href = "Team_en.html";
             }
         }
     </script>
-    
 </body>
 </html>

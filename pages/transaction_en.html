@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <a href="../index.html" class="back-button">← Back</a>
+        <a href="../index_en.html" class="back-button">← Back</a>
         <h1>ACDcoin Transaction</h1>
         <form onsubmit="validateForm(event)">
             <label for="sender">Sender Address 
@@ -40,17 +40,19 @@
     </div>
 
     <footer>
+        <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
+            <option value="tr">Turkish</option>
             <option value="en" selected>English</option>
-            <option value="tr">Türkçe</option>
         </select>
     </footer>
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "tr") {
+            if (lang === "tr"){
                 window.location.href = "transaction_tr.html";
-            } else {
+            }
+            else{
                 window.location.href = "transaction_en.html";
             }
         }

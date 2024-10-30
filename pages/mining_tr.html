@@ -1,25 +1,27 @@
+<!--minin.html-->
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
-    <link rel="stylesheet" href="../css/Team.css">
-    <title>EKİP - ACDcoin</title>
+    <link rel="stylesheet" href="../css/mining.css">
+    <title>ACDcoin Mining</title>
+    <style>
+    </style>
 </head>
 <body>
-
     <header>
         <div class="wrapper">
            <div class="container">
                <div id="branding">
-                   <h1><a href="../index_en.html">ACDcoin</a></h1>
+                   <h1><a href="../index_tr.html">ACDcoin</a></h1>
                </div>
                <nav>
                    <ul>
                        <li><a href="../index_tr.html">Ana Sayfa</a></li>
                        <li><a href="mining_tr.html">Madencilik</a></li>
-                       <li class="open"><a href="About_us_tr.html">Hakkımızda</a>
+                       <li class="open"><a href="Aboutus_tr.html">Hakkımızda</a>
                           <div class="box">
                                <ul>
                                    <li class="element"><a href="contact_tr.html">İletişim</a></li>
@@ -35,75 +37,43 @@
        </div>
    </header>
 
-   <div class="main-content" style="transition: 300ms all ease-in-out;">
-        <div class="card">
-            <div class="img">
-                <img src="../images/Arda_emoji.png" alt="Arda BAŞKURT">
-            </div>
-            <div class="text">
-                <h2>Arda BAŞKURT</h2>
-                <br>
-                <h4>Yönetim Kurulu Başkanı</h4>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <a href="https://github.com/ardabasa"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
-                    &nbsp;
-                    <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
-                </div>
-            </div>
+    <section class="showcase">
+        <div class="button"></div>
+        <div class="mining container">
+            <h1>ACDcoin Madenciliğine Bugün Başlayın</h1>
+            <p>Devrime katılın ve son teknoloji madencilik platformumuzla ACDcoin madenciliğine başlayın.
+            </p>
         </div>
-        
-        <div class="card">
-            <div class="img">
-                <img src="../images/Burak_emoji.png" alt="Burak KONCA">
-            </div>
-            <div class="text">
-                <h2>Burak KONCA</h2>
-                <br>
-                <h4>Genel Müdür</h4>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <a href="https://github.com/Secoani"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
-                    &nbsp;
-                    <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="card">
-            <div class="img">
-                <img src="../images/leyla_emoji.png" alt="Leyla KOÇAK">
-            </div>
-            <div class="text">
-                <h2>Leyla KOÇAK</h2>
-                <br>
-                <h4>Yazılım Geliştirici</h4>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <a href="#"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
-                    &nbsp;
-                   <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
+    
+
+    <section class="content container">
+        <h1>Neden ACDcoin Madenciliği?</h1>
+        <p>ACDcoin hızlı işlemler, düşük ücretler ve güvenli bir ağ sunan devrim niteliğinde bir kripto para birimidir. ACDcoin madenciliği yaparak, ödüller kazanırken ağın güvenliğine ve merkezsizleşmesine katkıda bulunursunuz.</p>
+        <h1>Nasıl Başlanır</h1>
+        <p>ACDcoin madenciliğine başlamak kolaydır. Aşağıdaki adımları izleyin:</p>
+        <ul>
+            <li>ACDcoin madencilik yazılımını indirin ve kurun.</li>
+            <li>Bir madencilik havuzuna katılın veya tek başınıza madenciliğe başlayın.</li>
+            <li>Madencilik yazılımınızı cüzdan adresinizle yapılandırın.</li>
+            <li>Madenciliğe başlayın ve ACDcoin ödülleri kazanın.</li>
+        </ul>
+    </section>
 
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
             <option value="tr" selected>Türkçe</option>
-            <option value="en">English</option>
+            <option value="en">İnglizce</option>
         </select>
     </footer>
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "en") {
+            if (lang === "en"){
                 window.location.href = "mining_en.html";
-            } else {
+            }
+            else{
                 window.location.href = "mining_tr.html";
             }
         }

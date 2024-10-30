@@ -56,7 +56,7 @@ header #branding {
 }
 header #branding h1 a {
     margin: 0;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -70,6 +70,13 @@ header nav {
 main {
     padding: 20px;
 }
+main h2{
+    font-size: 28px;
+}
+main p{
+    font-size: 17px;
+}
+
 footer {
     background-color: #333;
     color: white;
