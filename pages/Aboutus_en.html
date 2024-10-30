@@ -11,7 +11,7 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><a href="../index_en.html">ACDcoin</a></h1>
+                <h1><a href="../index_en.html">ACDcoın</a></h1>
             </div>
             <nav>
                 <ul>
@@ -48,9 +48,24 @@
     </div>
 
 
-     <footer>
-        <p>ADcoin &copy; 2024</p>
-     </footer>
+     
+    <footer>
+        <p>ACDcoin &copy; 2024</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr" selected>Turkish</option>
+            <option value="en">English</option>
+        </select>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "Team_en.html";
+            } else {
+                window.location.href = "Team_tr.html";
+            }
+        }
+    </script>
     
 </body>
 </html>

@@ -14,11 +14,11 @@
     <header>
         <div class="container">
             <div id="branding">
-                <h1><a href="../ADCcoinWebsite/index_en.html">ACDcoin</a></h1>
+                <h1><a href="../index_en.html">ACDcoin</a></h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="../ADCcoinWebsite/index_en.html">Home</a></li>
+                    <li><a href="../index_en.html">Home</a></li>
                     <li><a href="pages/mining_en.html">Mining</a></li>
                     <li class="open"><a href="pages/Aboutus_en.html">About Us</a>
                        <div class="box">
@@ -47,8 +47,23 @@
         </section>
     </main>
     <script src="script.js"></script>
+    
     <footer>
-        <p>ADcoin &copy; 2024</p>
+        <p>ACDcoin &copy; 2024</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr" selected>Turkish</option>
+            <option value="en">English</option>
+        </select>
     </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "index_en.html";
+            } else {
+                window.location.href = "index_tr.html";
+            }
+        }
+    </script>
 </body>
 </html>
