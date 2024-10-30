@@ -1,0 +1,65 @@
+<!--contact.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact Us - ACDcoin</title>
+</head>
+<body>
+    <header>
+         <div class="wrapper">
+            <div class="container">
+                <div id="branding">
+                    <h1><a href="../index_en.html">ACDcoin</a></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index_en.html">Home</a></li>
+                        <li><a href="mining_en.html">Mining</a></li>
+                        <li class="open"><a href="Aboutus_en.html">About Us</a>
+                           <div class="box">
+                                <ul>
+                                    <li class="element"><a href="contact_en.html">Contact</a></li>
+                                    <li><a href="Team_en.html">Team</a></li>
+                                </ul>
+                           </div>
+                        </li>
+                        <li><a href="transaction_en.html">Transactions</a></li>
+                        <li><a href="download_en.html">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+        <div class="container main-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions, feel free to reach out to us!</p>
+            <p><strong>CEO:</strong> Arda Başkurt</p>
+            <p><strong>Email:</strong> arda@adcoin.com</p>
+            <p><strong>Phone:</strong> +90 (534) 394 80 20</p>
+            <p><strong>Address:</strong>Bursa</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>ADcoin &copy; 2024</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr" selected>Türkçe</option>
+            <option value="en">English</option>
+        </select>
+    </footer>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "Team_en.html";
+            } else {
+                window.location.href = "Team_tr.html";
+            }
+        }
+    </script>
+</body>
+</html>
