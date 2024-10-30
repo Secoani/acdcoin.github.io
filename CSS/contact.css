@@ -24,21 +24,6 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
-header .box{
-    display: none;
-    list-style: none;
-    margin-top: 10px;
-    width: 60px;
-    height: 35px;
-    position: relative;
-    right: 20px;
-}
-header .box .element{
-    margin-bottom: 6px;
-}
-header .open:hover .box{
-    display: block;
-}
 header ul li a {
     color: #fff;
     text-decoration: none;
@@ -53,6 +38,21 @@ header li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
+}
+header .box{
+    display: none;
+    list-style: none;
+    margin-top: 10px;
+    width: 60px;
+    height: 35px;
+    position: relative;
+    right: 20px;
+}
+header .box .element{
+    margin-bottom: 6px;
+}
+header .open:hover .box{
+    display: block;
 }
 header #branding {
     float: left;
@@ -69,12 +69,22 @@ header nav {
     float: right;
     margin-top: 10px;
 }
+
+
 .main-content {
     padding: 20px;
     background: #fff;
     margin-top: 20px;
     border-radius: 5px;
 }
+.main-content h2{
+    font-size: 31px;
+}
+.main-content p {
+    font-size: 16px;
+}
+
+
 footer {
     background: #333;
     color: #fff;

@@ -22,22 +22,10 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
-header .box{
-    display: none;
-    list-style: none;
-    margin-top: 10px;
-    width: 60px;
-    height: 35px;
-    position: relative;
-    right: 20px;
-}
-header .box .element{
-    margin-bottom: 6px;
-}
-header .open:hover .box{
-    display: block;
-}
 
+header #branding {
+    float: left;
+}
 header ul li a {
     color: #fff;
     text-decoration: none;
@@ -53,8 +41,20 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
 }
-header #branding {
-    float: left;
+header .box{
+    display: none;
+    list-style: none;
+    margin-top: 10px;
+    width: 60px;
+    height: 35px;
+    position: relative;
+    right: 20px;
+}
+header .box .element{
+    margin-bottom: 6px;
+}
+header .open:hover .box{
+    display: block;
 }
 header #branding h1 a {
     margin: 0;
@@ -82,6 +82,9 @@ header nav {
     width: 90%;
     text-align: left;
     font-size: 19px;
+}
+.main-content h1{
+    font-size: 35px;
 }
 
 footer {
