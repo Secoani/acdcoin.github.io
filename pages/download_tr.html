@@ -15,20 +15,21 @@
         <a href="path/to/ADcoin.zip" class="btn-download">Şimdi İndir</a>
     </div>
 
-      <footer>
+    <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
             <option value="tr" selected>Türkçe</option>
             <option value="en">İnglizce</option>
         </select>
     </footer>
-    
+
     <script>
-                function changeLanguage(lang) {
-            if (lang === "en") {
-                window.location.href = "Team_en.html";
-            } else {
-                window.location.href = "Team_tr.html";
+        function changeLanguage(lang) {
+            if (lang === "en"){
+                window.location.href = "download_en.html";
+            }
+            else{
+                window.location.href = "download_tr.html";
             }
         }
     </script>

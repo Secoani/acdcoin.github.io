@@ -38,7 +38,7 @@
             <button type="submit">ACDcoin Gönder</button>
         </form>
     </div>
-
+    
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
@@ -49,9 +49,10 @@
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "en") {
+            if (lang === "en"){
                 window.location.href = "transaction_en.html";
-            } else {
+            }
+            else{
                 window.location.href = "transaction_tr.html";
             }
         }

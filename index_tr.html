@@ -36,7 +36,7 @@
     <main>
         <section id="home">
             <h2>Ana Sayfa</h2>
-            <p>İndirmek için <a href="download_tr.html">Buraya</a> tıklayın</p>
+            <p>İndirmek için <a href="pages/download_tr.html">Buraya</a> tıklayın</p>
         </section>
         <section id="about">
             <h2>Hakkında</h2>
@@ -55,9 +55,10 @@
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "en") {
+            if (lang === "en"){
                 window.location.href = "index_en.html";
-            } else {
+            }
+            else{
                 window.location.href = "index_tr.html";
             }
         }

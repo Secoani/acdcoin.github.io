@@ -38,7 +38,7 @@
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>You can download by clicking <a href="download_en.html">Here</a></p>
+            <p>You can download by clicking <a href="pages/download_en.html">Here</a></p>
         </section>
         <section id="about">
             <h2>About</h2>
@@ -46,22 +46,22 @@
             <p>We made a program that makes mining faster and easier</p>
         </section>
     </main>
-    <script src="script.js"></script>
     
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
-            <option value="tr" selected>Turkish</option>
-            <option value="en">English</option>
+            <option value="tr">Turkish</option>
+            <option value="en" selected>English</option>
         </select>
     </footer>
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "en") {
-                window.location.href = "index_en.html";
-            } else {
+            if (lang === "tr") {
                 window.location.href = "index_tr.html";
+            }
+            else{
+                window.location.href = "index_en.html";
             }
         }
     </script>

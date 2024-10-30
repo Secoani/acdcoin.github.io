@@ -42,16 +42,17 @@
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select onchange="changeLanguage(this.value)">
-            <option value="tr" selected>Turkish</option>
-            <option value="en">English</option>
+            <option value="tr">Turkish</option>
+            <option value="en" selected>English</option>
         </select>
     </footer>
 
     <script>
         function changeLanguage(lang) {
-            if (lang === "tr") {
+            if (lang === "tr"){
                 window.location.href = "transaction_tr.html";
-            } else {
+            }
+            else{
                 window.location.href = "transaction_en.html";
             }
         }
