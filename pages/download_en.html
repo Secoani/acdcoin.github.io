@@ -15,5 +15,21 @@
         <p>Click the button below to download the latest version of ACDcoin.</p>
         <a href="path/to/ADcoin.zip" class="btn-download">Download Now</a>
     </div>
+    <footer>
+        <p>ACDwwcoin</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr">Türkçe</option>
+            <option value="en" selected>English</option>
+        </select>
+    </footer>
+    <script>
+                function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "Team_en.html";
+            } else {
+                window.location.href = "Team_tr.html";
+            }
+        }
+    </script>
 </body>
 </html>
