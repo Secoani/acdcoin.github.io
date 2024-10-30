@@ -1,4 +1,3 @@
-<!--transaction.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,5 +38,22 @@
             <button type="submit">Send ACDcoin</button>
         </form>
     </div>
+
+    <footer>
+        <select onchange="changeLanguage(this.value)">
+            <option value="en" selected>English</option>
+            <option value="tr">Türkçe</option>
+        </select>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "tr") {
+                window.location.href = "transaction_tr.html";
+            } else {
+                window.location.href = "transaction_en.html";
+            }
+        }
+    </script>
 </body>
 </html>

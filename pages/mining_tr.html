@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="../css/Team.css">
+    <title>EKİP - ACDcoin</title>
+</head>
+<body>
+
+    <header>
+        <div class="wrapper">
+           <div class="container">
+               <div id="branding">
+                   <h1><a href="../index_en.html">ACDcoin</a></h1>
+               </div>
+               <nav>
+                   <ul>
+                       <li><a href="../index_tr.html">Ana Sayfa</a></li>
+                       <li><a href="mining_tr.html">Madencilik</a></li>
+                       <li class="open"><a href="About_us_tr.html">Hakkımızda</a>
+                          <div class="box">
+                               <ul>
+                                   <li class="element"><a href="contact_tr.html">İletişim</a></li>
+                                   <li><a href="Team_tr.html">Ekip</a></li>
+                               </ul>
+                          </div>
+                       </li>
+                       <li><a href="transaction_tr.html">İşlemler</a></li>
+                       <li><a href="download_tr.html">İndir</a></li>
+                   </ul>
+               </nav>
+           </div>
+       </div>
+   </header>
+
+   <div class="main-content" style="transition: 300ms all ease-in-out;">
+        <div class="card">
+            <div class="img">
+                <img src="../images/Arda_emoji.png" alt="Arda BAŞKURT">
+            </div>
+            <div class="text">
+                <h2>Arda BAŞKURT</h2>
+                <br>
+                <h4>Yönetim Kurulu Başkanı</h4>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <a href="https://github.com/ardabasa"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
+                    &nbsp;
+                    <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img">
+                <img src="../images/Burak_emoji.png" alt="Burak KONCA">
+            </div>
+            <div class="text">
+                <h2>Burak KONCA</h2>
+                <br>
+                <h4>Genel Müdür</h4>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <a href="https://github.com/Secoani"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
+                    &nbsp;
+                    <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img">
+                <img src="../images/leyla_emoji.png" alt="Leyla KOÇAK">
+            </div>
+            <div class="text">
+                <h2>Leyla KOÇAK</h2>
+                <br>
+                <h4>Yazılım Geliştirici</h4>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <a href="#"><img src="../images/github_logo.png" alt="GitHub Logosu"></a>
+                    &nbsp;
+                   <a href="#"> <img src="../images/email_logo.png" alt="Eposta Logosu"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>ACDcoin &copy; 2024</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr" selected>Türkçe</option>
+            <option value="en">English</option>
+        </select>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "mining_en.html";
+            } else {
+                window.location.href = "mining_tr.html";
+            }
+        }
+    </script>
+</body>
+</html>

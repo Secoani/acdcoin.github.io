@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.jpeg" type="image/jpeg">
+    <title>ACDcoin</title>
+    <link rel="stylesheet" href="css/web.css">
+    <script src="scripts/web.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="../index_tr.html">ACDcoin</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index_tr.html">Ana Sayfa</a></li>
+                    <li><a href="pages/mining_tr.html">Madencilik</a></li>
+                    <li class="open"><a href="pages/Aboutus_tr.html">Hakkımızda</a>
+                       <div class="box">
+                            <ul>
+                                <li class="element"><a href="pages/contact_tr.html">İletişim</a></li>
+                                <li><a href="pages/Team_tr.html">Ekip</a></li>
+                            </ul>
+                       </div>
+                    </li>
+                    <li><a href="pages/transaction_tr.html">İşlemler</a></li>
+                    <li><a href="pages/download_tr.html">İndir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Ana Sayfa</h2>
+            <p>İndirmek için <a href="download_tr.html">Buraya</a> tıklayın</p>
+        </section>
+        <section id="about">
+            <h2>Hakkında</h2>
+            <p>ACDcoin, bir okul projesi için yapılmış bir kripto paradır.</p>
+            <p>Madenciliği daha hızlı ve kolay hale getiren bir program geliştirdik.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>ACDcoin &copy; 2024</p>
+        <select onchange="changeLanguage(this.value)">
+            <option value="tr" selected>Türkçe</option>
+            <option value="en">English</option>
+        </select>
+    </footer>
+
+    <script>
+        function changeLanguage(lang) {
+            if (lang === "en") {
+                window.location.href = "index_en.html";
+            } else {
+                window.location.href = "index_tr.html";
+            }
+        }
+    </script>
+</body>
+</html>
