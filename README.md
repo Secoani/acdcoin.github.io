@@ -1,1 +1,1 @@
-Base coin config for the Crypto Currrency ACDcoin
+Website for the CrypoCurrency ACDcoin
