@@ -6,4 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+function changeLanguage(lang) {
+    if (lang === "tr") {
+        window.location.href = "index_tr.html";
+    }
+    else{
+        window.location.href = "index_en.html";
+    }
+}
 
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('show');
+}
