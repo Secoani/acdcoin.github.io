@@ -17,7 +17,8 @@
                 <h1><a href="../index_en.html">ACDcoin</a></h1>
             </div>
             <nav>
-                <ul>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+                <ul class="nav-links">
                     <li><a href="../index_en.html">Home</a></li>
                     <li><a href="pages/mining_en.html">Mining</a></li>
                     <li class="open"><a href="pages/Aboutus_en.html">About Us</a>
@@ -34,18 +35,23 @@
             </nav>
         </div>
     </header>
-
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>You can download by clicking <a href="pages/download_en.html">Here</a></p>
+    <main class="main">
+        <section id="img-container">
+            <div class="slogan-area">
+                <h1>ACDcoin Shaping the Future, Realize Your Dreams with Ethereum!</h1>
+                <a href="pages/download_en.html"><button>Click Here to Download</button></a>
+            </div>
         </section>
-        <section id="about">
-            <h2>About</h2>
-            <p>ADcoin is an crypto currency made for an school project</p>
-            <p>We made a program that makes mining faster and easier</p>
+
+        <section id="description-container">
+            <div class="description">
+                <h1>What is ACDcoin?</h1>
+                <p>It is a decentralized digital currency typically built on blockchain technology.</p>
+                <a href="pages/mining_en.html"><button>Click Here for More Information</button></a>
+            </div>
         </section>
     </main>
+
     
     <footer>
         <p>ACDcoin &copy; 2024</p>
@@ -63,6 +69,11 @@
             else{
                 window.location.href = "index_en.html";
             }
+        }
+
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('show');
         }
     </script>
 </body>
