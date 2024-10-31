@@ -10,3 +10,12 @@ function validateForm(event) {
         // Submit the form or perform further actions here
     }
 }
+
+function changeLanguage(lang) {
+    if (lang === "tr"){
+        window.location.href = "transaction_tr.html";
+    }
+    else{
+        window.location.href = "transaction_en.html";
+    }
+}
