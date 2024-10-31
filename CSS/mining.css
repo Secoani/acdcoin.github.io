@@ -1,10 +1,10 @@
-/* mining.css */
 body {
     font-family: monospace;
     background-color: #f1f1f1;
     margin: 0;
     padding: 0;
 }
+
 .container {
     width: 80%;
     margin: auto;
@@ -19,7 +19,8 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
-header .box{
+
+header .box {
     display: none;
     list-style: none;
     margin-top: 8px;
@@ -28,30 +29,37 @@ header .box{
     position: relative;
     right: 20px;
 }
-header .box .element{
+
+header .box .element {
     margin-bottom: 4px;
 }
-header .open:hover .box{
+
+header .open:hover .box {
     display: block;
 }
+
 header ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
+
 header ul {
     padding: 0;
     list-style: none;
 }
+
 header li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
 }
+
 header #branding {
     float: left;
 }
+
 header #branding h1 a {
     margin: 0;
     font-size: 40px;
@@ -60,43 +68,62 @@ header #branding h1 a {
     text-decoration: none;
     text-transform: uppercase;
 }
+
 header nav {
     float: right;
     margin-top: 10px;
 }
 
 .showcase {
+    position: relative;
     min-height: 400px;
-    background: url('mining-bg.jpg') no-repeat 0 -400px;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 40px 20px;
+}
+
+.showcase .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    z-index: 1;
+}
+
+.showcase .container {
+    position: relative;
+    z-index: 2;
     color: #111;
 }
+
 .showcase h1 {
-    margin-top: 100px;
     font-size: 55px;
     margin-bottom: 10px;
 }
+
 .showcase p {
     font-size: 20px;
 }
+
 .content {
     padding: 20px;
     background: #fff;
     margin-top: 20px;
     position: relative;
-    top: -70px;
 }
-.content h1{
+
+.content h1 {
     font-size: 30px;
 }
-.content p{
-    font-size: 20px;
-}
-.content li{
+
+.content p, .content li {
     font-size: 17px;
 }
-
-
 
 footer {
     background: #333;
@@ -106,3 +133,24 @@ footer {
     margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+    .showcase {
+        min-height: 300px;
+        padding: 20px;
+    }
+    .showcase h1 {
+        font-size: 40px;
+    }
+    .showcase p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .showcase h1 {
+        font-size: 30px;
+    }
+    .showcase p {
+        font-size: 16px;
+    }
+}
