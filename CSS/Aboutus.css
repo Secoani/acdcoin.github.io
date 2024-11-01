@@ -11,7 +11,7 @@ body {
 header .container {
     width: 80%;
     margin: auto;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 header {
@@ -22,43 +22,44 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
-
-header #branding {
-    float: left;
+header nav .dropdown{
+    display: none;
+    list-style: none;
+    margin-top: 8px;
+    width: 60px;
+    height: 35px;
+    position: relative;
+    right: 20px;
 }
-header ul li a {
+header nav .dropdown .element{
+    margin-bottom: 4px;
+    position: relative;
+}
+header nav .dropdowns:hover .dropdown{
+    display: block;
+}
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
-header ul {
+header nav ul {
     padding: 0;
     list-style: none;
 }
-header li {
+header nav li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
-}
-header .dropdown{
-    display: none;
-    list-style: none;
-    margin-top: 8px;
-    width: 60px;
-    height: 28px;
     position: relative;
-    right: 20px;
 }
-header .dropdown .element{
-    margin-bottom: 4px;
-}
-header .dropdowns:hover .dropdown{
-    display: block;
+header #branding {
+    float: left;
 }
 header #branding h1 a {
     margin: 0;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -68,6 +69,18 @@ header nav {
     float: right;
     margin-top: 10px;
 }
+header .container .menu-toggle{
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+}
+header .nav-links{
+    z-index: 1;
+}
+
+
 
 .main-content{
     width: 50%;
@@ -112,3 +125,46 @@ footer .language {
 footer .language:hover {
     background-color: #444;
 }
+
+@media (min-width: 857px) {
+    header{
+        height: 70px;
+    }
+  }
+
+@media (max-width: 857px) {
+    .nav-links  {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        height: 160px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        margin-top: 50px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #555;
+        margin-top: 10px;
+    }
+    .nav-links li a{
+        position: relative;
+        top: 5px;
+    }
+
+    .dropdown{
+        min-width: 100%;
+    }
+
+    .nav-links.show{
+        display: flex;
+    }
+
+    header .container .menu-toggle {
+        display: inline-block;
+    }
+  }

@@ -6,6 +6,7 @@
         <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
         <link rel="stylesheet" href="../css/Team.css">
         <script src="../scripts/Team.js" defer></script>
+        <script src="../scripts/main.js" defer></script>
         <title>TEAM - ACDcoin</title>
     </head>
 <body>
@@ -16,10 +17,10 @@
                 <h1><a href="../index_en.html">ACDcoin</a></h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="../index_en.html">Home</a></li>
                     <li><a href="mining_en.html">Mining</a></li>
-                    <li class="dropdowns"><a href="Aboutus_en.html">About Us</a>
+                    <li class="dropdowns" onmouseover="expandMen()"><a href="Aboutus_en.html">About Us</a>
                        <div class="dropdown">
                             <ul>
                                 <li class="element"><a href="contact_en.html">Contact</a></li>
@@ -31,10 +32,11 @@
                     <li><a href="download_en.html">Download</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
 
-   <div class="main-content" style="transition: 300ms all ease-in-out;">
+   <div class="main-content">
         <div class="card">
             <div class="img">
                 <img src="../images/Arda_emoji.png" alt="Arda BAŞKURT">
@@ -55,6 +57,24 @@
 
         <div class="card">
             <div class="img">
+                <img src="../images/Burak_emoji.png" alt="Burak KONCA">
+            </div>
+            <div class="text">
+                <h2>Burak KONCA</h2>
+                <br>
+                <h4>General Manager</h4>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <a href="https://github.com/Secoani" target="_blank"><img src="../images/github_logo.png" alt="GitHub Logo"></a>
+                    &nbsp;
+                    <a href="#" target="_blank"> <img src="../images/email_logo.png" alt="Eposta Logo"></a>
+                </div>
+            </div>
+        </div>  
+        
+        <div class="card">
+            <div class="img">
                 <img src="../images/leyla_emoji.png" alt="Leyla KOÇAK">
             </div>
             <div class="text">
@@ -71,24 +91,6 @@
             </div>
         </div>
         
-        <div class="card">
-            <div class="img">
-                <img src="../images/Burak_emoji.png" alt="Burak KONCA">
-            </div>
-            <div class="text">
-                <h2>Burak KONCA</h2>
-                <br>
-                <h4>General Manager</h4>
-            </div>
-            <div class="box">
-                <div class="img">
-                    <a href="https://github.com/Secoani" target="_blank"><img src="../images/github_logo.png" alt="GitHub Logo"></a>
-                    &nbsp;
-                    <a href="#" target="_blank"> <img src="../images/email_logo.png" alt="Eposta Logo"></a>
-                </div>
-            </div>
-        </div>  
-
         <div class="card">
             <div class="img">
                 <img src="../images/enemy.png" alt="Emirhan ACAR">

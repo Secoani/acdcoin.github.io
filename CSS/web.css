@@ -38,6 +38,7 @@ header nav .dropdown{
 }
 header nav .dropdown .element{
     margin-bottom: 4px;
+    position: relative;
 }
 header nav .dropdowns:hover .dropdown{
     display: block;
@@ -189,21 +190,9 @@ footer.language:hover {
     background-color: #444;
 }
 
-@media (max-width: 768px) {
-    h1 {
-      font-size: 24px;
-    }
-  
-    button {
-      font-size: 16px;
-    }
-    .description{
-        min-height: 300px;
-    }
-    .description button{
-        font-size: 10px;
-        position: relative;
-        left: -40px;
+  @media (min-width: 857px) {
+    header{
+        height: 70px;
     }
   }
 
@@ -212,6 +201,7 @@ footer.language:hover {
         display: none; 
         flex-direction: column;
         width: 100%;
+        height: 160px;
         position: absolute;
         top: 60px;
         left: 0;
@@ -223,18 +213,22 @@ footer.language:hover {
         width: 100%;
         text-align: center;
         border-top: 1px solid #555;
-        margin-top: 5px;
+        margin-top: 10px;
     }
-    
+    .nav-links li a{
+        position: relative;
+        top: 5px;
+    }
 
-    .nav-links.show , .sa.show {
+    .dropdown{
+        min-width: 100%;
+    }
+
+    .nav-links.show{
         display: flex;
     }
 
     header .container .menu-toggle {
         display: inline-block;
     }
-
-
-
   }
