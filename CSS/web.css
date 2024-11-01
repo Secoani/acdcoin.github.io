@@ -35,11 +35,10 @@
 
 body {
     font-family: monospace;
-    background-color: #f0f2f5;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #000;
+    background-color: #333;
 }
 .container {
     width: 80%;
@@ -101,13 +100,10 @@ header nav {
     margin-top: 10px;
 }
 
-
-
 main{
     width: 100%;
     height: auto;
 }
-
 
 #img-container{
     width: 100%;
@@ -148,7 +144,6 @@ main{
     background-size: 100%;
 }
 
-
 #description-container{
     width: 100%;
     height: 300px;
@@ -157,20 +152,24 @@ main{
     align-items: center;
     background-color: #232121 ;
 }
+
 #description-container .description{
     width: 50%;
     height: 200px;
     background-color: #fff;
     border-radius: 5px;
 }
+
 #description-container .description h1{
     margin-left: 15px;
     font-size: 27px;
 }
+
 #description-container .description p{
     margin-left: 15px;
     font-size: 17px;
 }
+
 #description-container .description button{
     margin: 10px 0 0 37%;
     border-radius: 5px;
@@ -188,10 +187,6 @@ main{
     background-size: 100%;
 }
 
-
-
-
-
 footer {
     background: #333;
     color: #fff;
@@ -199,3 +194,16 @@ footer {
     padding: 30px;
 }
 
+.language {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    transition: 100ms all ease-in-out;
+}
+
+.language:hover {
+    background-color: #444;
+}
