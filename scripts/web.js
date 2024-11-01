@@ -15,6 +15,15 @@ function changeLanguage(lang) {
     }
 }
 
+window.addEventListener('resize', () => {
+    const navLinks = document.querySelector('.nav-links');
+    
+    // Ekran genişliği 857 pikselin üstündeyse menüyü kapat
+    if (window.innerWidth > 857 && navLinks.classList.contains('show')) {
+        navLinks.classList.remove('show');
+    }
+});
+
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');

@@ -74,12 +74,11 @@ header nav {
     margin-top: 10px;
 }
 header .container .menu-toggle{
-    display: inline;
+    display: none;
     font-size: 24px;
     color: #fff;
     cursor: pointer;
     float: right;
-    opacity: 0;
 }
 
 main{
@@ -209,7 +208,7 @@ footer.language:hover {
   }
 
   @media (max-width: 857px) {
-    .nav-links {
+    .nav-links  {
         display: none; 
         flex-direction: column;
         width: 100%;
@@ -226,12 +225,16 @@ footer.language:hover {
         border-top: 1px solid #555;
         margin-top: 5px;
     }
+    
 
-    .nav-links.show {
+    .nav-links.show , .sa.show {
         display: flex;
     }
 
     header .container .menu-toggle {
-        opacity: 1;
+        display: inline-block;
     }
+
+
+
   }
