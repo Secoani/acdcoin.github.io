@@ -133,6 +133,20 @@ footer {
     margin-top: 30px;
 }
 
+.language {
+    display: inline-block;
+    background-color: #222;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    transition: 100ms all ease-in-out;
+}
+
+.language:hover {
+    background-color: #444;
+}
+
 @media (max-width: 768px) {
     .showcase {
         min-height: 300px;
