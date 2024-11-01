@@ -39,7 +39,7 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
 }
-header .box{
+header .dropdown{
     display: none;
     list-style: none;
     margin-top: 8px;
@@ -48,10 +48,10 @@ header .box{
     position: relative;
     right: 20px;
 }
-header .box .element{
+header .dropdown .element{
     margin-bottom: 4px;
 }
-header .open:hover .box{
+header .dropdowns:hover .dropdown{
     display: block;
 }
 header #branding {
