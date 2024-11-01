@@ -13,32 +13,32 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-h1 {
+.container h1 {
     text-align: center;
     color: #333;
     margin-bottom: 30px;
 }
-form {
+.container  form {
     display: flex;
     flex-direction: column;
 }
-label {
+.container  label {
     margin-bottom: 8px;
     color: #666;
     font-weight: 700;
 }
-input[type="text"], input[type="number"] {
+.container  input[type="text"], input[type="number"] {
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     transition: border-color 0.3s;
 }
-input:focus {
+.container  input:focus {
     border-color: #28a745;
     outline: none;
 }
-button {
+.container  button {
     padding: 14px;
     background: #28a745;
     color: #fff;
@@ -48,10 +48,10 @@ button {
     font-size: 16px;
     transition: background-color 0.3s;
 }
-button:hover {
+.container  button:hover {
     background: #218838;
 }
-.back-button {
+.container  .back-button {
     display: inline-block;
     padding: 10px;
     background: #6c757d;
@@ -62,17 +62,17 @@ button:hover {
     text-align: center;
     transition: 100ms al ease-in-out;
 }
-.back-button:hover {
+.container  .back-button:hover {
     background: #5a6268;
 }
-.tooltip {
+.container  .tooltip {
     position: relative;
     display: inline-block;
     cursor: help;
     margin-left: 5px;
     transition: 100ms al ease-in-out;
 }
-.tooltip .tooltip-text {
+.container  .tooltip .tooltip-text {
     visibility: hidden;
     width: 200px;
     background-color: #555;
@@ -88,7 +88,7 @@ button:hover {
     opacity: 0;
     transition: opacity 0.3s;
 }
-.tooltip:hover .tooltip-text {
+.container footer .tooltip:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
 }
@@ -103,7 +103,7 @@ footer {
     width: 100%;
 }
 
-.language {
+footer .language {
     display: inline-block;
     background-color: #222;
     color: #fff;
@@ -113,6 +113,6 @@ footer {
     transition: 100ms all ease-in-out;
 }
 
-.language:hover {
+footer .language:hover {
     background-color: #444;
 }

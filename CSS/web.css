@@ -1,31 +1,4 @@
 /* web.css */
-
-@media (max-width: 1000px) {
-    .nav-links {
-        display: none; 
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-    }
-    
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #ddd;
-    }
-    
-    .menu-icon {
-        display: block;
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-}
-
 .menu-icon {
     display: none;
     font-size: 24px;
@@ -40,7 +13,7 @@ body {
     padding: 0;
     background-color: #333;
 }
-.container {
+header .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
@@ -54,7 +27,7 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
-header .box{
+header nav .dropdown{
     display: none;
     list-style: none;
     margin-top: 8px;
@@ -63,26 +36,27 @@ header .box{
     position: relative;
     right: 20px;
 }
-header .box .element{
+header nav .dropdown .element{
     margin-bottom: 4px;
 }
-header .open:hover .box{
+header nav .dropdowns:hover .dropdown{
     display: block;
 }
-header ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
-header ul {
+header nav ul {
     padding: 0;
     list-style: none;
 }
-header li {
+header nav li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
+    position: relative;
 }
 header #branding {
     float: left;
@@ -99,13 +73,21 @@ header nav {
     float: right;
     margin-top: 10px;
 }
+header .container .menu-toggle{
+    display: inline;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    opacity: 0;
+}
 
 main{
     width: 100%;
     height: auto;
 }
 
-#img-container{
+main #img-container{
     width: 100%;
     height: 500px;
     display: flex;
@@ -115,7 +97,7 @@ main{
     color: #fff;
     
 }
-#img-container .slogan-area{
+main #img-container .slogan-area{
     width: 50%;
     height: 150px;
     background-color: #232121;
@@ -123,11 +105,11 @@ main{
     border-radius: 5px;
     font-size: 25px;
 }
-#img-container .slogan-area h1{
+main #img-container .slogan-area h1{
    margin-top: 30px;
 }
 
-#img-container .slogan-area button {
+main #img-container .slogan-area button {
     margin-top: 20px;
     border-radius: 5px;
     height: 30px;
@@ -140,11 +122,11 @@ main{
     background-position: left;
     transition: 0.50s all ease-in-out;
 }
-#img-container .slogan-area button:hover{
+main #img-container .slogan-area button:hover{
     background-size: 100%;
 }
 
-#description-container{
+main #description-container{
     width: 100%;
     height: 300px;
     display: flex;
@@ -153,24 +135,24 @@ main{
     background-color: #232121 ;
 }
 
-#description-container .description{
+main #description-container .description{
     width: 50%;
     height: 200px;
     background-color: #fff;
     border-radius: 5px;
 }
 
-#description-container .description h1{
+main #description-container .description h1{
     margin-left: 15px;
     font-size: 27px;
 }
 
-#description-container .description p{
+main #description-container .description p{
     margin-left: 15px;
     font-size: 17px;
 }
 
-#description-container .description button{
+main #description-container .description button{
     margin: 10px 0 0 37%;
     border-radius: 5px;
     height: 30px;
@@ -183,7 +165,7 @@ main{
     background-position: left;
     transition: 0.50s all ease-in-out;
 }
-#description-container .description button:hover{
+main #description-container .description button:hover{
     background-size: 100%;
 }
 
@@ -194,7 +176,7 @@ footer {
     padding: 30px;
 }
 
-.language {
+footer .language {
     display: inline-block;
     background-color: #222;
     color: #fff;
@@ -204,6 +186,52 @@ footer {
     transition: 100ms all ease-in-out;
 }
 
-.language:hover {
+footer.language:hover {
     background-color: #444;
 }
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    button {
+      font-size: 16px;
+    }
+    .description{
+        min-height: 300px;
+    }
+    .description button{
+        font-size: 10px;
+        position: relative;
+        left: -40px;
+    }
+  }
+
+  @media (max-width: 857px) {
+    .nav-links {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        margin-top: 50px;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #555;
+        margin-top: 5px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    header .container .menu-toggle {
+        opacity: 1;
+    }
+  }

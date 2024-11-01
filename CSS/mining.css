@@ -20,7 +20,7 @@ header {
     font-family: fantasy;
 }
 
-header .box {
+header nav .dropdown {
     display: none;
     list-style: none;
     margin-top: 8px;
@@ -30,27 +30,27 @@ header .box {
     right: 20px;
 }
 
-header .box .element {
+header nav .dropdown .element {
     margin-bottom: 4px;
 }
 
-header .open:hover .box {
+header nav .dropdowns:hover .dropdown {
     display: block;
 }
 
-header ul li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
 }
 
-header ul {
+header nav ul {
     padding: 0;
     list-style: none;
 }
 
-header li {
+header nav li {
     float: left;
     display: inline;
     padding: 0 20px 0 20px;
@@ -133,7 +133,7 @@ footer {
     margin-top: 30px;
 }
 
-.language {
+footer .language {
     display: inline-block;
     background-color: #222;
     color: #fff;
@@ -143,7 +143,7 @@ footer {
     transition: 100ms all ease-in-out;
 }
 
-.language:hover {
+footer .language:hover {
     background-color: #444;
 }
 
