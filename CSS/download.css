@@ -33,22 +33,16 @@ body {
     position: relative;
 }
 
-.btn-download {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    font-size: 16px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 4px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 100ms all ease-in-out;
+#mac {
+    width: 10%;
+    margin: 0 auto;
 }
-.btn-download:hover {
-    background-color: #0056b3;
+
+#windows {
+    width: 10%;
+    margin: 0 auto;
 }
+
 
 footer {
     background-color: #333;
