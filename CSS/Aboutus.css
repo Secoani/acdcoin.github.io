@@ -8,7 +8,7 @@ body {
     min-height: 100vh;
 }
 
-.container {
+header .container {
     width: 80%;
     margin: auto;
     overflow: hidden;   
@@ -41,7 +41,7 @@ header li {
     display: inline;
     padding: 0 20px 0 20px;
 }
-header .box{
+header .dropdown{
     display: none;
     list-style: none;
     margin-top: 8px;
@@ -50,10 +50,10 @@ header .box{
     position: relative;
     right: 20px;
 }
-header .box .element{
+header .dropdown .element{
     margin-bottom: 4px;
 }
-header .open:hover .box{
+header .dropdowns:hover .dropdown{
     display: block;
 }
 header #branding h1 a {
@@ -99,7 +99,7 @@ footer {
     position: relative;
 }
 
-.language {
+footer .language {
     display: inline-block;
     background-color: #222;
     color: #fff;
@@ -109,6 +109,6 @@ footer {
     transition: 100ms all ease-in-out;
 }
 
-.language:hover {
+footer .language:hover {
     background-color: #444;
 }
