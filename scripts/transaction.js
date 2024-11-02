@@ -1,15 +1,4 @@
 // transaction.js
-document.addEventListener('DOMContentLoaded', () => {
-    // Sayfa yüklendiğinde kaydedilen dili al
-    const savedLanguage = localStorage.getItem('language') || 'en';
-    setLanguage(savedLanguage);
-    
-    const langSelect = document.querySelector('.language');
-    langSelect.value = savedLanguage; // Seçili dili dropdown'da göster
-
-    // Dili sayfa yüklendiğinde bağlantılara uygula
-    updateNavLinks(savedLanguage);
-});
 
 // Seçili dili ayarlayan fonksiyon
 function setLanguage(lang) {

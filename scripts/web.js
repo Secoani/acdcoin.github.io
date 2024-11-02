@@ -1,28 +1,4 @@
 // web.js
-document.addEventListener('DOMContentLoaded', () => {
-    // localStorage'da dil varsa onu al, yoksa varsayılan olarak Türkçe'yi ayarla
-    const savedLanguage = localStorage.getItem('language') || 'tr';
-    
-    // Sayfanın dilini ayarla
-    setLanguage(savedLanguage);
-    
-    // Dil seçim kutusunu kaydedilen dile göre ayarla
-    const langSelect = document.querySelector('.language');
-    langSelect.value = savedLanguage;
-
-    // Tüm navigasyon bağlantılarına seçili dili ekle
-    updateNavLinks(savedLanguage);
-});
-
-// Navigasyon bağlantılarını güncelle ve mevcut dil için bağlantılara dil parametresi ekle
-function updateNavLinks(lang) {
-    const links = document.querySelectorAll('nav a, .slogan-area a, .description a');
-    links.forEach(link => {
-        const url = new URL(link.href);
-        url.searchParams.set('lang', lang); // `lang` parametresini ayarla veya güncelle
-        link.href = url.toString();
-    });
-}
 
 // Sayfa içeriğini seçili dile göre ayarla
 function setLanguage(lang) {
