@@ -1,3 +1,4 @@
+// download.js
 function changeLanguage(lang) {
     if (lang === "tr"){
         window.location.href = "download_tr.html";

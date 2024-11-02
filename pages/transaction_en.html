@@ -1,49 +1,50 @@
+<!-- transaction.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
-    <title>ACDcoin Transaction Page</title>
+    <title>ACDcoin İşlem Sayfası</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/transactionstyle.css">
     <script src="../scripts/transaction.js" defer></script>
 </head>
 <body>
     <div class="container">
-        <a href="../index_en.html" class="back-button">← Back</a>
-        <h1>ACDcoin Transaction</h1>
+        <a href="../index_en.html" class="back-button">← Geri</a>
+        <h1>ACDcoin İşlem</h1>
         <form onsubmit="validateForm(event)">
-            <label for="sender">Sender Address 
+            <label for="sender">Gönderen Adresi 
                 <span class="tooltip">?
-                    <span class="tooltip-text">Enter the address sending the ACDcoin.</span>
+                    <span class="tooltip-text">ACDcoin gönderen adresi girin.</span>
                 </span>
             </label>
-            <input type="text" id="sender" name="sender" placeholder="e.g., 0x1234..." required>
+            <input type="text" id="sender" name="sender" placeholder="örn. 0x1234..." required>
 
-            <label for="receiver">Receiver Address 
+            <label for="receiver">Alıcı Adresi 
                 <span class="tooltip">?
-                    <span class="tooltip-text">Enter the recipient's address.</span>
+                    <span class="tooltip-text">Alıcının adresini girin.</span>
                 </span>
             </label>
-            <input type="text" id="receiver" name="receiver" placeholder="e.g., 0x5678..." required>
+            <input type="text" id="receiver" name="receiver" placeholder="örn. 0x5678..." required>
 
-            <label for="amount">Amount (ACDcoin)
+            <label for="amount">Miktar (ACDcoin)
                 <span class="tooltip">?
-                    <span class="tooltip-text">Specify the amount of ACDcoin to send.</span>
+                    <span class="tooltip-text">Göndermek istediğiniz ACDcoin miktarını belirtin.</span>
                 </span>
             </label>
-            <input type="number" id="amount" name="amount" min="0.01" step="0.01" placeholder="e.g., 10.5" required>
+            <input type="number" id="amount" name="amount" min="0.01" step="0.01" placeholder="örn. 10.5" required>
 
-            <button type="submit">Send ACDcoin</button>
+            <button type="submit">ACDcoin Gönder</button>
         </form>
     </div>
 
     <footer>
         <p>ACDcoin &copy; 2024</p>
-        <select class="language"  onchange="changeLanguage(this.value)">
-            <option value="tr">Turkish</option>
-            <option value="en" selected>English</option>
+        <select class="language" onchange="changeLanguage(this.value)">
+            <option value="tr">Türkçe</option>
+            <option value="en" selected>İngilizce</option>
         </select>
     </footer>
 </body>

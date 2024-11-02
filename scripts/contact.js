@@ -1,3 +1,4 @@
+// contact.js
 function changeLanguage(lang) {
     if (lang === "tr"){
         window.location.href = "contact_tr.html";

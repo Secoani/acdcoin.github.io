@@ -1,3 +1,4 @@
+// main.js
 window.addEventListener('resize', () => {
     const navLinks = document.querySelector('.nav-links');
     
