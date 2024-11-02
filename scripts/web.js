@@ -1,28 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    // localStorage'da dil varsa onu al, yoksa varsayılan olarak Türkçe'yi ayarla
     const savedLanguage = localStorage.getItem('language') || 'tr';
     
-
+    // Sayfanın dilini ayarla
     setLanguage(savedLanguage);
     
-
+    // Dil seçim kutusunu kaydedilen dile göre ayarla
     const langSelect = document.querySelector('.language');
     langSelect.value = savedLanguage;
 
-
+    // Tüm navigasyon bağlantılarına seçili dili ekle
     updateNavLinks(savedLanguage);
 });
 
-
+// Navigasyon bağlantılarını güncelle ve mevcut dil için bağlantılara dil parametresi ekle
 function updateNavLinks(lang) {
     const links = document.querySelectorAll('nav a, .slogan-area a, .description a');
     links.forEach(link => {
         const url = new URL(link.href);
-        url.searchParams.set('lang', lang); 
+        url.searchParams.set('lang', lang); // `lang` parametresini ayarla veya güncelle
         link.href = url.toString();
     });
 }
 
+// Sayfa içeriğini seçili dile göre ayarla
 function setLanguage(lang) {
     const content = {
         tr: {
@@ -65,6 +66,7 @@ function setLanguage(lang) {
         }
     };
 
+    // Sayfa içeriğini seçilen dile göre güncelle
     document.title = content[lang].title;
     document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
     document.querySelector('.nav-links li:nth-child(1) a').textContent = content[lang].navHome;
@@ -85,20 +87,22 @@ function setLanguage(lang) {
     langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
     langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
 
-
+    // Tüm bağlantıları güncelleyerek dil parametresini ekle
     updateNavLinks(lang);
 }
 
+// Dili değiştir ve seçili dili localStorage'da sakla
 function changeLanguage(lang) {
     setLanguage(lang);
-    localStorage.setItem('language', lang); 
+    localStorage.setItem('language', lang); // Seçilen dili localStorage'a kaydet
 }
 
+// URL'den dil parametresini oku ve sayfa yüklendiğinde ayarla
 const urlParams = new URLSearchParams(window.location.search);
 const urlLang = urlParams.get('lang');
 if (urlLang) {
     changeLanguage(urlLang);
-    localStorage.setItem('language', urlLang);
+    localStorage.setItem('language', urlLang); // URL'den gelen dili localStorage'a kaydet
 }
 
 window.addEventListener('resize', () => {
@@ -108,6 +112,7 @@ window.addEventListener('resize', () => {
     }
 });
 
+// Mobil menüyü aç/kapat
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('show');
