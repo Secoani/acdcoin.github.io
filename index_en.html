@@ -8,6 +8,7 @@
     <title>ACDcoin</title>
     <link rel="stylesheet" href="css/web.css">
     <script src="scripts/web.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,11 +17,10 @@
                 <h1><a href="index_en.html">ACDcoin</a></h1>
             </div>
             <nav>
-                <div class="menu-icon" onclick="toggleMenu()">☰</div>
                 <ul class="nav-links">
                     <li><a href="index_en.html">Home</a></li>
                     <li><a href="pages/mining_en.html">Mining</a></li>
-                    <li class="dropdowns"><a href="pages/Aboutus_en.html">About Us</a>
+                    <li class="dropdowns" onmouseover="expandMen()"><a href="pages/Aboutus_en.html">About Us</a>
                        <div class="dropdown">
                             <ul>
                                 <li class="element"><a href="pages/contact_en.html">Contact</a></li>
@@ -32,8 +32,10 @@
                     <li><a href="pages/download_en.html">Download</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
+    
     <main class="main">
         <section id="img-container">
             <div class="slogan-area">

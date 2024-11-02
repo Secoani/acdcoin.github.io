@@ -8,6 +8,7 @@
     <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="../css/contact.css">
     <script src="../scripts/contact.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,10 +17,10 @@
                 <h1><a href="../index_en.html">ACDcoin</a></h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="../index_en.html">Home</a></li>
                     <li><a href="mining_en.html">Mining</a></li>
-                    <li class="dropdowns"><a href="Aboutus_en.html">About Us</a>
+                    <li class="dropdowns" onmouseover="expandMen()"><a href="Aboutus_en.html">About Us</a>
                        <div class="dropdown">
                             <ul>
                                 <li class="element"><a href="contact_en.html">Contact</a></li>
@@ -31,6 +32,7 @@
                     <li><a href="download_en.html">Download</a></li>
                 </ul>
             </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
 

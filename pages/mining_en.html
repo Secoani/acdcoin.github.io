@@ -6,34 +6,34 @@
     <link rel="icon" href="../images/icon.jpeg" type="image/jpeg">
     <link rel="stylesheet" href="../css/mining.css">
     <script src="../scripts/mining.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
     <title>ACDcoin Mining</title>
 </head>
 <body>
     <header>
-        <div class="wrapper">
-           <div class="container">
-               <div id="branding">
-                   <h1><a href="../index_en.html">ACDcoin</a></h1>
-               </div>
-               <nav>
-                   <ul>
-                       <li><a href="../index_en.html">Home</a></li>
-                       <li><a href="mining_en.html">Mining</a></li>
-                       <li class="dropdowns"><a href="Aboutus_en.html">About Us</a>
-                          <div class="dropdown">
-                               <ul>
-                                   <li class="element"><a href="contact_en.html">Contact</a></li>
-                                   <li><a href="Team_en.html">Team</a></li>
-                               </ul>
-                          </div>
-                       </li>
-                       <li><a href="transaction_en.html">Transactions</a></li>
-                       <li><a href="download_en.html">Download</a></li>
-                   </ul>
-               </nav>
-           </div>
-       </div>
-   </header>
+        <div class="container">
+            <div id="branding">
+                <h1><a href="../index_en.html">ACDcoin</a></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="../index_en.html">Home</a></li>
+                    <li><a href="mining_en.html">Mining</a></li>
+                    <li class="dropdowns" onmouseover="expandMen()"><a href="Aboutus_en.html">About Us</a>
+                       <div class="dropdown">
+                            <ul>
+                                <li class="element"><a href="contact_en.html">Contact</a></li>
+                                <li><a href="Team_en.html">Team</a></li>
+                            </ul>
+                       </div>
+                    </li>
+                    <li><a href="transaction_en.html">Transactions</a></li>
+                    <li><a href="download_en.html">Download</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        </div>
+    </header>
 
     <section class="showcase">
         <div class="overlay"></div>

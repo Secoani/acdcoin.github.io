@@ -1,10 +1,4 @@
 /* web.css */
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
 
 body {
     font-family: monospace;
@@ -38,6 +32,7 @@ header nav .dropdown{
 }
 header nav .dropdown .element{
     margin-bottom: 4px;
+    position: relative;
 }
 header nav .dropdowns:hover .dropdown{
     display: block;
@@ -84,6 +79,8 @@ header .container .menu-toggle{
 main{
     width: 100%;
     height: auto;
+    order: 1;
+    
 }
 
 main #img-container{
@@ -175,19 +172,6 @@ footer {
     padding: 30px;
 }
 
-footer .language {
-    display: inline-block;
-    background-color: #222;
-    color: #fff;
-    padding: 5px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    transition: 100ms all ease-in-out;
-}
-
-footer.language:hover {
-    background-color: #444;
-}
 
 @media (max-width: 768px) {
     h1 {
@@ -196,45 +180,6 @@ footer.language:hover {
   
     button {
       font-size: 16px;
+      padding: 10px;
     }
-    .description{
-        min-height: 300px;
-    }
-    .description button{
-        font-size: 10px;
-        position: relative;
-        left: -40px;
-    }
-  }
-
-  @media (max-width: 857px) {
-    .nav-links  {
-        display: none; 
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-        margin-top: 50px;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        border-top: 1px solid #555;
-        margin-top: 5px;
-    }
-    
-
-    .nav-links.show , .sa.show {
-        display: flex;
-    }
-
-    header .container .menu-toggle {
-        display: inline-block;
-    }
-
-
-
   }
