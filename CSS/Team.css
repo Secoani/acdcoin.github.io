@@ -201,7 +201,7 @@ footer .language:hover {
     }
 
     .nav-links li {
-        width: 95%;
+        width: 94%;
         text-align: center;
         border-top: 1px solid #555;
         margin-top: 10px;
@@ -213,8 +213,7 @@ footer .language:hover {
 
     .dropdown{
         min-width: 100%;
-        margin-left: 15px;
-       
+        margin-left: 22px;       
     }
 
     .nav-links.show{
