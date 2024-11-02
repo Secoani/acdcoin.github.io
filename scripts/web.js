@@ -1,3 +1,4 @@
+// web.js
 document.addEventListener('DOMContentLoaded', () => {
     // localStorage'da dil varsa onu al, yoksa varsayılan olarak Türkçe'yi ayarla
     const savedLanguage = localStorage.getItem('language') || 'tr';

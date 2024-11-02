@@ -1,6 +1,6 @@
-<!--web.html-->
+<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,59 +8,56 @@
     <title>ACDcoin</title>
     <link rel="stylesheet" href="css/web.css">
     <script src="scripts/web.js" defer></script>
-    <script src="scripts/main.js" defer></script>
 </head>
 <body>
     <header>
         <div class="container">
             <div id="branding">
-                <h1><a href="index_en.html">ACDcoin</a></h1>
+                <h1><a href="index_tr.html">ACDcoın</a></h1>
             </div>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="index_en.html">Home</a></li>
-                    <li><a href="pages/mining_en.html">Mining</a></li>
-                    <li class="dropdowns" onmouseover="expandMen()"><a href="pages/Aboutus_en.html">About Us</a>
-                       <div class="dropdown">
+                <ul class ="nav-links">
+                    <li><a href="index_tr.html">Ana Sayfa</a></li>
+                    <li><a href="pages/mining_tr.html">Madencilik</a></li>
+                    <li class="dropdowns"><a href="pages/Aboutus_tr.html">Hakkımızda</a>
+                        <div class="dropdown">
                             <ul>
-                                <li class="element"><a href="pages/contact_en.html">Contact</a></li>
-                                <li><a href="pages/Team_en.html">Team</a></li>
+                                <li class="element"><a href="pages/contact_tr.html">İletişim</a></li>
+                                <li><a href="pages/Team_tr.html">Ekip</a></li>
                             </ul>
-                       </div>
+                        </div>
                     </li>
-                    <li><a href="pages/transaction_en.html">Transactions</a></li>
-                    <li><a href="pages/download_en.html">Download</a></li>
+                    <li><a href="pages/transaction_tr.html">İşlemler</a></li>
+                    <li><a href="pages/download_tr.html">İndir</a></li>
                 </ul>
             </nav>
             <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         </div>
     </header>
-    
-    <main class="main">
+
+    <main>
         <section id="img-container">
             <div class="slogan-area">
-                <h1>ACDcoin Shaping the Future, Realize Your Dreams with Ethereum!</h1>
-                <a href="pages/download_en.html"><button>Click Here to Download</button></a>
+                <h1>Geleceği Şekillendiren ACDcoin Ethereum ile Hayallerini Gerçekleştir!</h1>
+                <a href="pages/download_tr.html"><button>İndirmek İçin Tıklayınız</button></a>
             </div>
         </section>
 
         <section id="description-container">
             <div class="description">
-                <h1>What is ACDcoin?</h1>
-                <p>It is a decentralized digital currency typically built on blockchain technology.</p>
-                <a href="pages/mining_en.html"><button>Click Here for More Information</button></a>
+                <h1>ACDcoin Nedir?</h1>
+                <p>Merkezi olmayan bir dijital para birimidir ve blockchain teknolojisi üzerine inşa edilmiştir.</p>
+                <a href="pages/mining_tr.html"><button>Daha Fazla Bilgi için Tıklayınız</button></a>
             </div>
         </section>
     </main>
 
-    
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select class="language" onchange="changeLanguage(this.value)">
             <option value="tr" selected>Türkçe</option>
             <option value="en">İngilizce</option>
-        </select>        
+        </select>
     </footer>
-    
 </body>
 </html>
