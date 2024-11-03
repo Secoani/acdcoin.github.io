@@ -70,21 +70,23 @@ body {
 
 .container .download .windows-btn-download{
     position: relative;
-    top: 35px;
-    left: -65px;
+    top: 25px;
+    left: -105px;
 }
 
 .container .download .mac-btn-download{
     position: relative;
-    top: 35px;
-    left: -50px;
+    top: 25px;
+    left: -80px;
 }
 
 .container .download img{
-    width: 20%;
-    height: 75px;
+    width: 40%;
+    height: 125px;
     margin-top: 15px;
     margin-left: 20px;
+    position: relative;
+    top: -25px;
 }
 
 

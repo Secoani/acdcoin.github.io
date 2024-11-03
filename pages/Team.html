@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/Team.css">
         <script src="../scripts/Team.js" defer></script>
         <script src="../scripts/main.js" defer></script>
+        <script src="../scripts/content.js" defer></script>
         <title>TEAM - ACDcoin</title>
     </head>
 <body>
@@ -18,7 +19,7 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="../indez.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="mining.html">Mining</a></li>
                     <li class="dropdowns" onmouseover="expandMen()"><a href="Aboutus.html">About Us</a>
                        <div class="dropdown">
@@ -36,7 +37,7 @@
         </div>
     </header>
 
-   <div class="main-content" style="transition: 300ms all ease-in-out;">
+   <div class="main-content">
         <div class="card">
             <div class="img">
                 <img src="../images/Arda_emoji.png" alt="Arda BAŞKURT">
@@ -44,7 +45,7 @@
             <div class="text">
                 <h2>Arda BAŞKURT</h2>
                 <br>
-                <h4>Chief Executive Officer</h4>
+                <h4 id="ceoTitle">Chief Executive Officer</h4>
             </div>
             <div class="box">
                 <div class="img">
@@ -66,7 +67,7 @@
             <div class="text">
                 <h2>Burak KONCA</h2>
                 <br>
-                <h4>General Manager</h4>
+                <h4 id="gmTitle">General Manager</h4>
             </div>
             <div class="box">
                 <div class="img">
@@ -88,7 +89,7 @@
             <div class="text">
                 <h2>Leyla KOÇAK</h2>
                 <br>
-                <h4>Software Developer</h4>
+                <h4 id="devTitle">Software Developer</h4>
             </div>
             <div class="box">
                 <div class="img">
@@ -110,7 +111,7 @@
             <div class="text">
                 <h2>Emirhan ACAR</h2>
                 <br>
-                <h4>Trasher</h4>
+                <h4 id="trasherTitle">Trasher</h4>
             </div>
             <div class="box">
                 <div class="img">
@@ -132,7 +133,7 @@
             <div class="text">
                 <h2>Onur KULACIK</h2>
                 <br>
-            <h4>Trash Bin</h4>
+                <h4 id="trashBinTitle">Trash Bin</h4>
             </div>
             <div class="box">
                 <div class="img">
@@ -152,9 +153,9 @@
 
     <footer>
         <p>ACDcoin &copy; 2024</p>
-        <select class="language"  onchange="changeLanguage(this.value)">
-            <option value="tr">Turkish</option>
-            <option value="en" selected>English</option>
+        <select class="language" onchange="changeLanguage(this.value)">
+            <option value="tr">Türkçe</option>
+            <option value="en" selected>İngilizce</option>
         </select>
     </footer>
     

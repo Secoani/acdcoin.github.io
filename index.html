@@ -7,8 +7,8 @@
     <link rel="icon" href="images/icon.jpeg" type="image/jpeg">
     <title>ACDcoin</title>
     <link rel="stylesheet" href="css/web.css">
-    <script src="scripts/web.js" defer></script>
-    <script src="scripts/main.js" defer></script>
+   
+    
 </head>
 <body>
     <header>
@@ -20,7 +20,7 @@
                 <ul class ="nav-links">
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="pages/mining.html">Madencilik</a></li>
-                    <li class="dropdowns"><a href="pages/Aboutus.html">Hakkımızda</a>
+                    <li class="dropdowns" onmouseover="expandMen()"><a href="pages/Aboutus.html">Hakkımızda</a>
                         <div class="dropdown">
                             <ul>
                                 <li class="element"><a href="pages/contact.html">İletişim</a></li>
@@ -48,7 +48,7 @@
             <div class="description">
                 <h1>ACDcoin Nedir?</h1>
                 <p>Merkezi olmayan bir dijital para birimidir ve blockchain teknolojisi üzerine inşa edilmiştir.</p>
-                <a href="pages/mining_tr.html"><button>Daha Fazla Bilgi için Tıklayınız</button></a>
+                <a href="pages/mining_tr.html"><button class="Moreinfo-btn">Daha Fazla Bilgi için Tıklayınız</button></a>
             </div>
         </section>
     </main>
@@ -56,9 +56,13 @@
     <footer>
         <p>ACDcoin &copy; 2024</p>
         <select class="language" onchange="changeLanguage(this.value)">
-            <option value="tr" selected>Türkçe</option>
-            <option value="en">İngilizce</option>
+            <option value="tr">Türkçe</option>
+            <option value="en" selected>İngilizce</option>
         </select>
     </footer>
+
+    <script src="scripts/web.js" defer></script>
+    <script src="../scripts/content.js" defer></script>
+    <script src="scripts/main.js" defer></script>
 </body>
 </html>

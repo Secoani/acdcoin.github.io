@@ -160,6 +160,7 @@ main #description-container .description button{
     background-size: 0%;
     background-position: left;
     transition: 0.50s all ease-in-out;
+    overflow: auto;
 }
 main #description-container .description button:hover{
     background-size: 100%;
@@ -172,6 +173,11 @@ footer {
     padding: 30px;
 }
 
+@media (min-width: 857px) {
+    header{
+        height: 70px;
+    }
+  }
 
 @media (max-width: 768px) {
     h1 {
@@ -180,8 +186,28 @@ footer {
   
     button {
       font-size: 16px;
-      padding: 10px;
     }
+    .Moreinfo-btn{
+        position:absolute   ;
+        right: 230px;
+        font-size: 14;
+        width: 38%;
+        float: left;
+    }
+}
+
+@media (max-width: 700px) {
+    main .description{
+        overflow: auto;
+        height: 280px !important;
+    }
+    .Moreinfo-btn{
+       position: absolute;
+       left: -20px;
+       width: 35%;
+       height: 30%;
+    }
+
 }
 
 @media (max-width: 857px) {
@@ -198,7 +224,7 @@ footer {
     }
 
     .nav-links li {
-        width: 94%;
+        width: calc(100% - 50px);
         text-align: center;
         border-top: 1px solid #555;
         margin-top: 10px;
@@ -210,7 +236,7 @@ footer {
 
     .dropdown{
         min-width: 100%;
-        margin-left: 17px;
+        margin-left: 24px;
 
     }
 
