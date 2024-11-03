@@ -68,7 +68,7 @@ function setLanguage(lang) {
     document.querySelector('.main-content p:nth-of-type(4) strong').textContent = content[lang].phoneLabel;
     document.querySelector('.main-content p:nth-of-type(5) strong').textContent = content[lang].addressLabel;
     document.querySelector('.main-content p:nth-of-type(7) strong').textContent = content[lang].gmTitle;
-    document.querySelector('.main-content p:nth-of-type(8) strong').textContent = content[lang].emailLabel;
+    document.querySelector('.main-content p.gmEmail strong').textContent = content[lang].emailLabel;
     document.querySelector('.main-content p:nth-of-type(9) strong').textContent = content[lang].phoneLabel;
     document.querySelector('.main-content p:nth-of-type(10) strong').textContent = content[lang].addressLabel;
 
