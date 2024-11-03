@@ -26,7 +26,7 @@ function setLanguage(lang) {
             title: "ACDcoin",
             headerTitle: "ACDcoin",
             navHome: "Home",
-            navMining: "Mining",
+            navMining: "Mınıng",
             navAbout: "About Us",
             navContact: "Contact",
             navTeam: "Team",

@@ -172,6 +172,11 @@ footer {
     padding: 30px;
 }
 
+@media (min-width: 857px) {
+    header{
+        height: 70px;
+    }
+  }
 
 @media (max-width: 768px) {
     h1 {
@@ -198,7 +203,7 @@ footer {
     }
 
     .nav-links li {
-        width: 94%;
+        width: calc(100% - 50px);
         text-align: center;
         border-top: 1px solid #555;
         margin-top: 10px;
@@ -210,7 +215,7 @@ footer {
 
     .dropdown{
         min-width: 100%;
-        margin-left: 17px;
+        margin-left: 24px;
 
     }
 

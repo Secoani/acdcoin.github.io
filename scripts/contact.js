@@ -18,7 +18,9 @@ function setLanguage(lang) {
             emailLabel: "E-posta:",
             phoneLabel: "Telefon numarası:",
             addressLabel: "Adres:",
-            footerText: "ACDcoin &copy; 2024"
+            footerText: "ACDcoin &copy; 2024",
+            langTurkish: "Türkçe",
+            langEnglish: "İngilizce"
         },
         en: {
             title: "Contact Us - ACDcoin",
@@ -37,9 +39,16 @@ function setLanguage(lang) {
             emailLabel: "Email:",
             phoneLabel: "Phone:",
             addressLabel: "Address:",
-            footerText: "ACDcoin &copy; 2024"
+            footerText: "ACDcoin &copy; 2024",
+            langTurkish: "Turkish",
+            langEnglish: "English"
         }
     };
+
+    const langSelect = document.querySelector('.language');
+    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
+    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
+
 
     document.title = content[lang].title;
     document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
@@ -64,6 +73,8 @@ function setLanguage(lang) {
     document.querySelector('.main-content p:nth-of-type(10) strong').textContent = content[lang].addressLabel;
 
     document.querySelector('footer p').textContent = content[lang].footerText;
+
+   
 }
 
 function changeLanguage(lang) {

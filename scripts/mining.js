@@ -23,7 +23,9 @@ function setLanguage(lang) {
                 "Madencilik yazılımınızı cüzdan adresinizle yapılandırın.",
                 "Madenciliğe başlayın ve ACDcoin ödülleri kazanın."
             ],
-            footerText: "ACDcoin &copy; 2024"
+            footerText: "ACDcoin &copy; 2024",
+            langTurkish: "Türkçe",
+            langEnglish: "İngilizce"
         },
         en: {
             title: "ACDcoin Mining",
@@ -47,9 +49,17 @@ function setLanguage(lang) {
                 "Configure your mining software with your wallet address.",
                 "Start mining and earn ACDcoin rewards."
             ],
-            footerText: "ACDcoin &copy; 2024"
+            footerText: "ACDcoin &copy; 2024",
+            langTurkish: "Turkish",
+            langEnglish: "English"
         }
     };
+
+    
+    const langSelect = document.querySelector('.language');
+    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
+    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
+
 
     document.title = content[lang].title;
     document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
