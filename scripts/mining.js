@@ -56,11 +56,8 @@ function setLanguage(lang) {
     };
 
     
-    const langSelect = document.querySelector('.language');
-    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
-    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
-
-
+    
+    
     document.title = content[lang].title;
     document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
     document.querySelector('.nav-links li:nth-child(1) a').textContent = content[lang].navHome;
@@ -70,7 +67,7 @@ function setLanguage(lang) {
     document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navTeam;
     document.querySelector('.nav-links li:nth-child(4) a').textContent = content[lang].navTransactions;
     document.querySelector('.nav-links li:nth-child(5) a').textContent = content[lang].navDownload;
-
+    
     // Mining specific content
     document.querySelector('.mining.container h1').textContent = content[lang].miningTitle;
     document.querySelector('.mining.container p').textContent = content[lang].miningDesc;
@@ -78,13 +75,19 @@ function setLanguage(lang) {
     document.querySelector('.content.container p:first-of-type').textContent = content[lang].whyMiningDesc;
     document.querySelector('.content.container h1:last-of-type').textContent = content[lang].howToStartTitle;
     document.querySelector('.content.container p:nth-of-type(2)').textContent = content[lang].howToStartDesc;
-
+    
     const steps = document.querySelectorAll('.content.container ul li');
     content[lang].steps.forEach((step, index) => {
         steps[index].textContent = step;
     });
 
+
     document.querySelector('footer p').textContent = content[lang].footerText;
+    
+    const langSelect = document.querySelector('.language');
+    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
+    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
+
 }
 
 function changeLanguage(lang) {

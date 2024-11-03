@@ -58,6 +58,7 @@ function setLanguage(lang) {
     document.querySelector('.description h1').textContent = content[lang].descriptionTitle;
     document.querySelector('.description p').textContent = content[lang].descriptionText;
     document.querySelector('.description button').textContent = content[lang].learnMoreButton;
+    
     document.querySelector('footer p').textContent = content[lang].footerText;
 
     const langSelect = document.querySelector('.language');

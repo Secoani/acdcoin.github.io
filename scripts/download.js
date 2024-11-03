@@ -26,9 +26,6 @@ function setLanguage(lang) {
         }
     };
 
-    const langSelect = document.querySelector('.language');
-    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
-    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
     
     document.title = content[lang].title;
     document.querySelector('.back-button').textContent = content[lang].backButton;
@@ -37,6 +34,11 @@ function setLanguage(lang) {
     document.querySelector('.windows-btn-download').textContent = content[lang].windowsButton;
     document.querySelector('.mac-btn-download').textContent = content[lang].macButton;
     document.querySelector('footer p').textContent = content[lang].footerText;
+    
+    
+    const langSelect = document.querySelector('.language');
+    langSelect.querySelector('option[value="tr"]').textContent = content[lang].langTurkish;
+    langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
 }
 
 function changeLanguage(lang) {

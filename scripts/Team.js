@@ -10,14 +10,6 @@ function setLanguage(lang) {
     const content = {
         tr:{
             title: "ACDcoin Madencilik",
-            headerTitle: "ACDcoın",
-            navHome: "Ana Sayfa",
-            navMining: "Madencilik",
-            navAbout: "Hakkımızda",
-            navContact: "İletişim",
-            navTeam: "Ekip",
-            navTransactions: "İşlemler",
-            navDownload: "İndir",
             ceo: "Baş Yönetici",
             gm: "Genel Müdür",
             dev: "Yazılım Geliştirici",
@@ -28,14 +20,6 @@ function setLanguage(lang) {
         },
         en:{
             title: "ACDcoin Mining",
-            headerTitle: "ACDcoin",
-            navHome: "Home",
-            navMining: "Mining",
-            navAbout: "About Us",
-            navContact: "Contact",
-            navTeam: "Team",
-            navTransactions: "Transactions",
-            navDownload: "Download",
             ceo: "Chief Executive Officer",
             gm: "General Manager",
             dev: "Software Developer",
@@ -47,16 +31,6 @@ function setLanguage(lang) {
     };
 
     document.title = content[lang].title;
-    document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
-    document.querySelector('.nav-links li:nth-child(1) a').textContent = content[lang].navHome;
-    document.querySelector('.nav-links li:nth-child(2) a').textContent = content[lang].navMining;
-    document.querySelector('.nav-links li.dropdowns a').textContent = content[lang].navAbout;
-    document.querySelector('.dropdown .element a').textContent = content[lang].navContact;
-    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navTeam;
-    document.querySelector('.nav-links li:nth-child(4) a').textContent = content[lang].navTransactions;
-    document.querySelector('.nav-links li:nth-child(5) a').textContent = content[lang].navDownload;
-    document.querySelector('footer p').textContent = content[lang].footerText;
-    
     document.querySelector("#ceoTitle").textContent = content[lang].ceo;
     document.querySelector("#gmTitle").textContent = content[lang].gm;
     document.querySelector("#devTitle").textContent = content[lang].dev;
