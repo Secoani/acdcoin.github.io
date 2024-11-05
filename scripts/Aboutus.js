@@ -18,7 +18,7 @@ function setLanguage(lang) {
             visionText: "Bu projenin vizyonu, blok zincir ve dijital varlıklar alanında daha derin bilgiye sahip, yenilikçi düşünebilen ve teknolojik gelişmelere ayak uydurabilen bireyler yetiştirmektir. Ethereum tabanlı bu proje ile öğrenciler, blockchain teknolojisinin sınırlarını keşfederek dijital finansın geleceğinde söz sahibi olma yetkinliği kazanacaklardır.",
             missionTitle: "Misyon:",
             missionText: "Bu projenin misyonu, öğrencilere blok zincir teknolojisinin temel prensiplerini öğretmek ve onların Ethereum gibi merkeziyetsiz platformlarda token geliştirme konusunda pratik bir deneyim kazanmalarını sağlamaktır. Proje, öğrencilerin dijital varlıklar ile ilgili anlayışlarını güçlendirmeyi, güvenli ve etkili bir şekilde token oluşturmayı öğrenmelerini hedefler.",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Türkçe",
             langEnglish: "İngilizce"
         },
@@ -38,7 +38,7 @@ function setLanguage(lang) {
             visionText: "The vision of this project is to cultivate individuals with a deeper understanding of blockchain and digital assets who can think innovatively and adapt to technological advancements. Through this Ethereum-based project, students will explore the limits of blockchain technology, gaining skills that empower them to have a voice in the future of digital finance.",
             missionTitle: "Mission:",
             missionText: "The mission of this project is to teach students the fundamental principles of blockchain technology and provide hands-on experience in developing tokens on decentralized platforms like Ethereum. This project aims to enhance students' understanding of digital assets, guiding them in learning to create tokens securely and effectively.",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Turkish",
             langEnglish: "English"
         }
@@ -72,4 +72,9 @@ function setLanguage(lang) {
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang);
+
+    // URL'yi güncelle
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
+    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
 }

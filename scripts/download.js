@@ -9,7 +9,7 @@ function setLanguage(lang) {
             downloadDesc: "ACDcoin'in en son sürümünü indirmek için aşağıdaki butonlardan birine tıklayın.",
             windowsButton: "Windows",
             macButton: "Mac",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Türkçe",
             langEnglish: "İngilizce"
         },
@@ -20,7 +20,7 @@ function setLanguage(lang) {
             downloadDesc: "ACDcoin is a cryptocurrency that offers users a secure and innovative digital asset experience.",
             windowsButton: "Windows",
             macButton: "Mac",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Turkish",
             langEnglish: "English"
         }
@@ -44,4 +44,9 @@ function setLanguage(lang) {
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang);
+    
+    // URL'yi güncelle
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
+    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
 }

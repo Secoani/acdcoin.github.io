@@ -43,10 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Navigasyon bağlantılarını güncelle ve mevcut dil için bağlantılara dil parametresi ekle
 function updateNavLinks(lang) {
-    const links = document.querySelectorAll('nav a, .slogan-area a, .description a');
+    const links = document.querySelectorAll('a.back-button');
     links.forEach(link => {
         const url = new URL(link.href);
         url.searchParams.set('lang', lang); // `lang` parametresini ayarla veya güncelle
-        link.href = url.toString();
+        link.href = url.toString(); // Güncellenmiş URL'yi at
     });
 }
