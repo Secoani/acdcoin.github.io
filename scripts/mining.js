@@ -23,7 +23,7 @@ function setLanguage(lang) {
                 "Madencilik yazılımınızı cüzdan adresinizle yapılandırın.",
                 "Madenciliğe başlayın ve ACDcoin ödülleri kazanın."
             ],
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Türkçe",
             langEnglish: "İngilizce"
         },
@@ -49,7 +49,7 @@ function setLanguage(lang) {
                 "Configure your mining software with your wallet address.",
                 "Start mining and earn ACDcoin rewards."
             ],
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Turkish",
             langEnglish: "English"
         }
@@ -93,4 +93,9 @@ function setLanguage(lang) {
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang);
+
+    // URL'yi güncelle
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
+    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
 }

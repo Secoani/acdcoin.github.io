@@ -14,7 +14,7 @@ function setLanguage(lang) {
             gm: "Genel Müdür",
             dev: "Yazılım Geliştirici",
             trasher: "Çöpçü",
-            trashBin: "Çöp Kutusu",
+            trashBin: "Web Tasarımcısı",
             langTurkish: "Türkçe",
             langEnglish: "İngilizce"
         },
@@ -24,7 +24,7 @@ function setLanguage(lang) {
             gm: "General Manager",
             dev: "Software Developer",
             trasher: "Trasher",
-            trashBin: "Trash Bin",
+            trashBin: "Web Designer",
             langTurkish: "Turkish",
             langEnglish: "English"
         }
@@ -52,4 +52,9 @@ function setLanguage(lang) {
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang);
+
+    // URL'yi güncelle
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
+    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
 }

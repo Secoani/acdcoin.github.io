@@ -18,7 +18,7 @@ function setLanguage(lang) {
             descriptionTitle: "ACDcoin Nedir?",
             descriptionText: "Merkezi olmayan bir dijital para birimidir ve blockchain teknolojisi üzerine inşa edilmiştir.",
             learnMoreButton: "Daha Fazla Bilgi için Tıklayınız",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Türkçe",
             langEnglish: "İngilizce"
         },
@@ -37,7 +37,7 @@ function setLanguage(lang) {
             descriptionTitle: "What is ACDcoin?",
             descriptionText: "It is a decentralized digital currency built on blockchain technology.",
             learnMoreButton: "Click for More Info",
-            footerText: "ACDcoin &copy; 2024",
+            footerText: "ACDcoin © 2024",
             langTurkish: "Turkish",
             langEnglish: "English"
         }
@@ -73,6 +73,11 @@ function setLanguage(lang) {
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang); // Seçilen dili localStorage'a kaydet
+
+    // URL'yi güncelle
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
+    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
 }
 
 // URL'den dil parametresini oku ve sayfa yüklendiğinde ayarla
