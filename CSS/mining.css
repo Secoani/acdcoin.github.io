@@ -115,6 +115,12 @@ header .container .menu-toggle{
     background: #fff;
     margin-top: 20px;
     position: relative;
+    margin: auto;
+}
+
+.container {
+    max-width: 1480px;
+    margin-inline: auto;
 }
 
 .content h1 {
@@ -124,29 +130,6 @@ header .container .menu-toggle{
 .content p, .content li {
     font-size: 17px;
 }
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-    margin-top: 30px;
-}
-
-footer .language {
-    display: inline-block;
-    background-color: #222;
-    color: #fff;
-    padding: 5px;
-    border: 1px solid #444;
-    border-radius: 4px;
-    transition: 100ms all ease-in-out;
-}
-
-footer .language:hover {
-    background-color: #444;
-}
-
 
 @media (min-width: 857px) {
     header{

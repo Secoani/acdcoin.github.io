@@ -10,7 +10,7 @@ function setLanguage(lang) {
             navMining: "Madencilik",
             navAbout: "Hakkımızda",
             navContact: "İletişim",
-            navTeam: "Ekip",
+            navteam: "Ekip",
             navTransactions: "İşlemler",
             navDownload: "İndir",
             slogan: "Geleceği Şekillendiren ACDcoin Ethereum ile Hayallerini Gerçekleştir!",
@@ -29,7 +29,7 @@ function setLanguage(lang) {
             navMining: "Mınıng",
             navAbout: "About Us",
             navContact: "Contact",
-            navTeam: "Team",
+            navteam: "team",
             navTransactions: "Transactions",
             navDownload: "Download",
             slogan: "Shape the Future with ACDcoin on Ethereum and Make Your Dreams Come True!",
@@ -50,7 +50,7 @@ function setLanguage(lang) {
     document.querySelector('.nav-links li:nth-child(2) a').textContent = content[lang].navMining;
     document.querySelector('.nav-links li.dropdowns a').textContent = content[lang].navAbout;
     document.querySelector('.dropdown .element a').textContent = content[lang].navContact;
-    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navTeam;
+    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navteam;
     document.querySelector('.nav-links li:nth-child(4) a').textContent = content[lang].navTransactions;
     document.querySelector('.nav-links li:nth-child(5) a').textContent = content[lang].navDownload;
     document.querySelector('.slogan-area h1').textContent = content[lang].slogan;
