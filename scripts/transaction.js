@@ -20,7 +20,7 @@ function setLanguage(lang) {
     }
 }
 
-// Dili değiştirirken çağrılan fonksiyon
+// Dili değiştir ve seçili dili localStorage'da sakla
 function changeLanguage(lang) {
     setLanguage(lang);
     localStorage.setItem('language', lang); // Seçilen dili localStorage'a kaydet
@@ -29,6 +29,14 @@ function changeLanguage(lang) {
     const url = new URL(window.location.href);
     url.searchParams.set('lang', lang); // `lang` parametresini güncelle
     window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
+}
+
+// URL'den dil parametresini oku ve sayfa yüklendiğinde ayarla
+const urlParams = new URLSearchParams(window.location.search);
+const urlLang = urlParams.get('lang');
+if (urlLang) {
+    changeLanguage(urlLang);
+    localStorage.setItem('language', urlLang); // URL'den gelen dili localStorage'a kaydet
 }
 
 // Sayfa yüklendiğinde dil parametresini kullanarak bağlantıları güncelle
@@ -59,6 +67,6 @@ function validateForm(event) {
         alert('Lütfen sıfırdan büyük geçerli bir miktar girin.'); // Geçersiz miktar uyarısı
     } else {
         alert('İşlem gönderildi!'); // Başarılı işlem uyarısı
-        // Gönderme sistemi burada olacak
+        // Transaction işlemi buraya kodlanacak
     }
 }

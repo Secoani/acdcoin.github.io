@@ -1,4 +1,4 @@
-// Aboutus.js
+// about-us.js
 
 function setLanguage(lang) {
     const content = {
@@ -9,7 +9,7 @@ function setLanguage(lang) {
             navMining: "Madencilik",
             navAbout: "Hakkımızda",
             navContact: "İletişim",
-            navTeam: "Ekip",
+            navteam: "Ekip",
             navTransactions: "İşlemler",
             navDownload: "İndir",
             aboutTitle: "Hakkımızda",
@@ -29,7 +29,7 @@ function setLanguage(lang) {
             navMining: "Mining",
             navAbout: "About Us",
             navContact: "Contact",
-            navTeam: "Team",
+            navteam: "team",
             navTransactions: "Transactions",
             navDownload: "Download",
             aboutTitle: "About Us",
@@ -50,7 +50,7 @@ function setLanguage(lang) {
     document.querySelector('.nav-links li:nth-child(2) a').textContent = content[lang].navMining;
     document.querySelector('.nav-links li.dropdowns a').textContent = content[lang].navAbout;
     document.querySelector('.dropdown .element a').textContent = content[lang].navContact;
-    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navTeam;
+    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navteam;
     document.querySelector('.nav-links li:nth-child(4) a').textContent = content[lang].navTransactions;
     document.querySelector('.nav-links li:nth-child(5) a').textContent = content[lang].navDownload;
 
@@ -69,12 +69,21 @@ function setLanguage(lang) {
     langSelect.querySelector('option[value="en"]').textContent = content[lang].langEnglish;
 }
 
+// Dili değiştir ve seçili dili localStorage'da sakla
 function changeLanguage(lang) {
     setLanguage(lang);
-    localStorage.setItem('language', lang);
+    localStorage.setItem('language', lang); // Seçilen dili localStorage'a kaydet
 
     // URL'yi güncelle
     const url = new URL(window.location.href);
     url.searchParams.set('lang', lang); // `lang` parametresini güncelle
     window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
+}
+
+// URL'den dil parametresini oku ve sayfa yüklendiğinde ayarla
+const urlParams = new URLSearchParams(window.location.search);
+const urlLang = urlParams.get('lang');
+if (urlLang) {
+    changeLanguage(urlLang);
+    localStorage.setItem('language', urlLang); // URL'den gelen dili localStorage'a kaydet
 }
