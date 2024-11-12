@@ -18,27 +18,28 @@ body {
     color: #333;
     margin-bottom: 30px;
 }
-.container  form {
+.container form {
     display: flex;
     flex-direction: column;
 }
-.container  label {
+.container label {
     margin-bottom: 8px;
     color: #666;
     font-weight: 700;
 }
-.container  input[type="text"], input[type="number"] {
+.container input[type="text"],
+input[type="number"] {
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 6px;
     transition: border-color 0.3s;
 }
-.container  input:focus {
+.container input:focus {
     border-color: #28a745;
     outline: none;
 }
-.container  button {
+.container button {
     padding: 14px;
     background: #28a745;
     color: #fff;
@@ -48,10 +49,10 @@ body {
     font-size: 16px;
     transition: background-color 0.3s;
 }
-.container  button:hover {
+.container button:hover {
     background: #218838;
 }
-.container  .back-button {
+.container .back-button {
     display: inline-block;
     padding: 10px;
     background: #6c757d;
@@ -62,17 +63,17 @@ body {
     text-align: center;
     transition: 100ms al ease-in-out;
 }
-.container  .back-button:hover {
+.container .back-button:hover {
     background: #5a6268;
 }
-.container  .tooltip {
+.container .tooltip {
     position: relative;
     display: inline-block;
     cursor: help;
     margin-left: 5px;
     transition: 100ms al ease-in-out;
 }
-.container  .tooltip .tooltip-text {
+.container .tooltip .tooltip-text {
     visibility: hidden;
     width: 200px;
     background-color: #555;
