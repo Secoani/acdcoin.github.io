@@ -1,5 +1,3 @@
-// web.js
-
 // Sayfa içeriğini seçili dile göre ayarla
 function setLanguage(lang) {
     const content = {
@@ -91,3 +89,7 @@ window.addEventListener("resize", () => {
         navLinks.classList.remove("show");
     }
 });
+
+
+
+

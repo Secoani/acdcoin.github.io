@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Set the page content language
-    setLanguage(currentLang);
+    // setLanguage(currentLang);
 
     // Store the language preference
     localStorage.setItem("language", currentLang);
@@ -98,4 +98,10 @@ function setSelector() {
     langSelect.addEventListener("change", (e) => {
         changeLanguage(e.target.value);
     });
+}
+
+
+function changeLanguage2(to) {
+    autoTranslateElements(to);
+    document.documentElement.lang = to;
 }

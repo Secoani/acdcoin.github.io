@@ -175,6 +175,3 @@ const content = {
         sendButton: "Send ACDcoin",
     },
 };
-
-// Export the content object for use in other files
-export default content;
