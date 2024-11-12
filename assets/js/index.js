@@ -47,7 +47,7 @@ function setLanguage(lang) {
 
     // Sayfa içeriğini seçilen dile göre güncelle
     document.title = content[lang].title;
-    document.getElementById("branding").querySelector("h1 a").textContent =
+    document.getElementById("branding").querySelector("h1 a").textContent = title[lang].headerTitle;
         content[lang].headerTitle;
     document.querySelector(".nav-links li:nth-child(1) a").textContent =
         content[lang].navHome;
@@ -61,7 +61,7 @@ function setLanguage(lang) {
         content[lang].navteam;
     document.querySelector(".nav-links li:nth-child(4) a").textContent =
         content[lang].navTransactions;
-    document.querySelector(".nav-links li:nth-child(5) a").textContent =
+    document.querySelector(".nav-links li:nth-child(5) a").textContent = 
         content[lang].navDownload;
     document.querySelector(".slogan-area h1").textContent =
         content[lang].slogan;
@@ -91,9 +91,3 @@ window.addEventListener("resize", () => {
         navLinks.classList.remove("show");
     }
 });
-
-// Mobil menüyü aç/kapat
-function toggleMenu() {
-    const navLinks = document.querySelector(".nav-links");
-    navLinks.classList.toggle("show");
-}
