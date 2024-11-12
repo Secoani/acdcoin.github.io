@@ -22,6 +22,9 @@ header {
     border-bottom: #77aaff 3px solid;
     font-family: fantasy;
 }
+header .nav-links {
+    position: relative;
+}
 header nav .dropdown{
     display: none;
     list-style: none;
@@ -33,14 +36,15 @@ header nav .dropdown{
 }
 header .dropdown .box {
     border-radius: 4px;
-    position: absolute;
     background-color: #333;
-    margin-bottom: 100px;
     top: 20px;
+    height: 50px;
+    width: 115px;
 }
 header nav .dropdown .element{
     margin-bottom: 4px;
     position: relative;
+    margin-inline: auto;
 }
 header nav .dropdowns:hover .dropdown{
     display: block;
@@ -109,13 +113,13 @@ footer .language {
 footer .language:hover {
     background-color: #444;
 }
-@media (min-width: 857px) {
+@media (min-width: 1048px) {
     header{
         height: 70px;
     }
   }
 
-@media (max-width: 857px) {
+@media (max-width: 1048px) {
     .nav-links  {
         display: none; 
         flex-direction: column;
