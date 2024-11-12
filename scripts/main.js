@@ -1,27 +1,33 @@
 // main.js
 window.addEventListener('resize', () => {
     const navLinks = document.querySelector('.nav-links');
-    
     if (window.innerWidth > 857 && navLinks.classList.contains('show')) {
         navLinks.classList.remove('show');
+        document.querySelector('.backdrop').classList.remove('active');
     }
 });
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
+    const backdrop = document.querySelector('.backdrop');
     navLinks.classList.toggle('show');
+    backdrop.classList.toggle('active');
 }
 
-function expandMen(){
+function expandMen() {
     const dropdowns = document.querySelector('.dropdowns');
-    const navLinks = document.querySelector('.nav-links');
-
+    const backdrop = document.querySelector('.backdrop');
+    
     dropdowns.addEventListener('mouseover', () => {
-        navLinks.style.height = '250px';
+        backdrop.classList.add('active');
     });
 
     dropdowns.addEventListener('mouseout', () => {
-        navLinks.style.height = '165px';
+        backdrop.classList.remove('active');
+    });
+
+    backdrop.addEventListener('click', () => {
+        backdrop.classList.remove('active');
     });
 }
 
@@ -49,6 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Update all navigation links with the current language
     updateNavLinks(currentLang);
+
+    // Initialize backdrop click handler
+    const backdrop = document.querySelector('.backdrop');
+    backdrop.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+            backdrop.classList.remove('active');
+        }
+    });
 });
 
 // Update navigation links with language parameter
@@ -76,6 +92,7 @@ function changeLanguage(lang) {
     // Update all navigation links
     updateNavLinks(lang);
 }
+
 function setSelector() {
     const langSelect = document.querySelector('.language');
     langSelect.addEventListener('change', (e) => {
