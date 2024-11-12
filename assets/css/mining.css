@@ -51,6 +51,7 @@ body {
 .container {
     max-width: 1480px;
     margin-inline: auto;
+    margin-bottom: 105px;
 }
 
 .content h1 {

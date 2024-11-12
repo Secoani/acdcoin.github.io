@@ -32,25 +32,27 @@ header nav .dropdown {
     list-style: none;
     margin-top: 8px;
     width: 60px;
-    height: 35px;
+    height: 60px;
     position: relative;
     right: 10px;
 }
 header .dropdown .box {
     border-radius: 4px;
     background-color: #444;
-    top: 20px;
-    height: 50px;
+    height: 80px;
     width: 115px;
 }
 header .dropdown .box .element {
-    position: relative;
+    position: absolute;
+    top: 10px;
     margin-inline: auto;
 }
-header nav .dropdown .element {
-    position: relative;
-    top: 10px;
+
+.first{
+    display: flex;
+    margin-bottom: 8px;
 }
+
 header nav .dropdowns:hover .dropdown {
     display: block;
 }
@@ -102,8 +104,9 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
+    position: fixed;
+    margin-bottom: 0;
     width: 100%;
 }
 
