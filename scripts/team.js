@@ -1,15 +1,16 @@
-
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLanguage = localStorage.getItem('language') || 'tr';
-    setLanguage(savedLanguage);
-    const langSelect = document.querySelector('.language');
-    langSelect.value = savedLanguage;
-});
-
 function setLanguage(lang) {
     const content = {
         tr:{
             title: "ACDcoin Ekip",
+            headerTitle: "ACDcoın",
+            navHome: "Ana Sayfa",
+            navMining: "Madencilik",
+            navAbout: "Hakkımızda",
+            navContact: "İletişim",
+            navteam: "Ekip",
+            navTransactions: "İşlemler",
+            navDownload: "İndir",
+            aboutTitle: "Hakkımızda",
             ceo: "Baş Yönetici",
             gm: "Genel Müdür",
             socialMediaMenager: 'Sosyal Medya Yöneticisi',
@@ -22,6 +23,14 @@ function setLanguage(lang) {
         },
         en:{
             title: "ACDcoin team",
+            headerTitle: "ACDcoin",
+            navHome: "Home",
+            navMining: "Mining",
+            navAbout: "About Us",
+            navContact: "Contact",
+            navteam: "team",
+            navTransactions: "Transactions",
+            navDownload: "Download",
             ceo: "Chief Executive Officer",
             gm: "General Manager",
             arge: "Research and Development Manager",
@@ -34,8 +43,18 @@ function setLanguage(lang) {
             
         }
     };
-
     document.title = content[lang].title;
+    document.getElementById('branding').querySelector('h1 a').textContent = content[lang].headerTitle;
+    document.querySelector('.nav-links li:nth-child(1) a').textContent = content[lang].navHome;
+    document.querySelector('.nav-links li:nth-child(2) a').textContent = content[lang].navMining;
+    document.querySelector('.nav-links li.dropdowns a').textContent = content[lang].navAbout;
+    document.querySelector('.dropdown .element a').textContent = content[lang].navContact;
+    document.querySelector('.dropdown ul li:nth-child(2) a').textContent = content[lang].navteam;
+    document.querySelector('.nav-links li:nth-child(4) a').textContent = content[lang].navTransactions;
+    document.querySelector('.nav-links li:nth-child(5) a').textContent = content[lang].navDownload;
+
+
+
     document.querySelector("#ceoTitle").textContent = content[lang].ceo;
     document.querySelector("#gmTitle").textContent = content[lang].gm;
     document.querySelector("#socialTitle").textContent = content[lang].socialMediaMenager;

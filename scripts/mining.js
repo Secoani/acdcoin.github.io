@@ -1,4 +1,3 @@
-// mining.js
 function setLanguage(lang) {
     const content = {
         tr: {

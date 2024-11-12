@@ -1,5 +1,3 @@
-// download.js
-
 function setLanguage(lang) {
     const content = {
         tr: {
