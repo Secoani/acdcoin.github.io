@@ -1,4 +1,4 @@
-.main-content{
+.main-content {
     width: 50%;
     margin: auto;
     padding: 20px;
@@ -8,11 +8,11 @@
     text-align: left;
     position: relative;
 }
-.main-content .aboutText{
+.main-content .aboutText {
     width: 90%;
     text-align: left;
     font-size: 19px;
 }
-.main-content h1{
+.main-content h1 {
     font-size: 35px;
 }

@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -34,29 +34,29 @@ body {
     height: 350px;
 }
 
-.container .download{
+.container .download {
     display: flex;
     height: 170px;
     text-align: center;
 }
 
-.container .download .windows-download{
+.container .download .windows-download {
     width: 50%;
     margin: 0 auto;
     position: relative;
     right: -70px;
 }
-.container .download .mac-download{
+.container .download .mac-download {
     width: 50%;
-    margin: 0 auto; 
+    margin: 0 auto;
     position: relative;
     right: 50px;
 }
 
-.container .download button{
+.container .download button {
     width: 120px;
     height: 40px;
-    background-color: #0078D4;
+    background-color: #0078d4;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
@@ -64,23 +64,23 @@ body {
     transition: 300ms all ease-in-out;
 }
 
-.container .download button:hover{
+.container .download button:hover {
     background-color: #0163ad;
 }
 
-.container .download .windows-btn-download{
+.container .download .windows-btn-download {
     position: relative;
     top: 25px;
     left: -105px;
 }
 
-.container .download .mac-btn-download{
+.container .download .mac-btn-download {
     position: relative;
     top: 25px;
     left: -80px;
 }
 
-.container .download img{
+.container .download img {
     width: 40%;
     height: 125px;
     margin-top: 15px;
@@ -88,4 +88,3 @@ body {
     position: relative;
     top: -25px;
 }
-
