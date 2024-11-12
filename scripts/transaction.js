@@ -19,36 +19,6 @@ function setLanguage(lang) {
         document.querySelector('button[type="submit"]').innerText = 'Send ACDcoin'; // Buton metni
     }
 }
-
-// Dili değiştir ve seçili dili localStorage'da sakla
-function changeLanguage(lang) {
-    setLanguage(lang);
-    localStorage.setItem('language', lang); // Seçilen dili localStorage'a kaydet
-
-    // URL'yi güncelle
-    const url = new URL(window.location.href);
-    url.searchParams.set('lang', lang); // `lang` parametresini güncelle
-    window.history.pushState({}, '', url); // URL'yi güncelle ve sayfa yenilenmeden adres çubuğunu değiştir
-}
-
-// URL'den dil parametresini oku ve sayfa yüklendiğinde ayarla
-const urlParams = new URLSearchParams(window.location.search);
-const urlLang = urlParams.get('lang');
-if (urlLang) {
-    changeLanguage(urlLang);
-    localStorage.setItem('language', urlLang); // URL'den gelen dili localStorage'a kaydet
-}
-
-// Sayfa yüklendiğinde dil parametresini kullanarak bağlantıları güncelle
-function updateNavLinks(lang) {
-    const links = document.querySelectorAll('a.back-button');
-    links.forEach(link => {
-        const url = new URL(link.href);
-        url.searchParams.set('lang', lang); // `lang` parametresini ayarla veya güncelle
-        link.href = url.toString(); // Güncellenmiş URL'yi at
-    });
-}
-
 // Form doğrulama fonksiyonu
 function validateForm(event) {
     event.preventDefault(); // Formun otomatik olarak gönderilmesini engelle

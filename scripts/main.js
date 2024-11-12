@@ -16,37 +16,69 @@ function expandMen(){
     const dropdowns = document.querySelector('.dropdowns');
     const navLinks = document.querySelector('.nav-links');
 
-
     dropdowns.addEventListener('mouseover', () => {
         navLinks.style.height = '250px';
     });
 
     dropdowns.addEventListener('mouseout', () => {
-        navLinks.style.height = '165px';
+        navLinks.style.height = '165px';https://github.com/
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    // localStorage'da dil varsa onu al, yoksa varsayılan olarak Türkçe'yi ayarla
-    const savedLanguage = localStorage.getItem('language') || 'tr';
-    
-    // Sayfanın dilini ayarla
-    setLanguage(savedLanguage);
-    
-    // Dil seçim kutusunu kaydedilen dile göre ayarla
-    const langSelect = document.querySelector('.language');
-    langSelect.value = savedLanguage;
+// Get language from URL or localStorage
+function getCurrentLanguage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLang = urlParams.get('lang');
+    return urlLang || localStorage.getItem('language') || 'tr';
+}
 
-    // Tüm navigasyon bağlantılarına seçili dili ekle
-    updateNavLinks(savedLanguage);
+document.addEventListener('DOMContentLoaded', () => {
+    const currentLang = getCurrentLanguage();
+    
+    // Set the language selector value
+    const langSelect = document.querySelector('.language');
+    if (langSelect) {
+        langSelect.value = currentLang;
+    }
+    
+    // Set the page content language
+    setLanguage(currentLang);
+    
+    // Store the language preference
+    localStorage.setItem('language', currentLang);
+    
+    // Update all navigation links with the current language
+    updateNavLinks(currentLang);
 });
 
-// Navigasyon bağlantılarını güncelle ve mevcut dil için bağlantılara dil parametresi ekle
+// Update navigation links with language parameter
 function updateNavLinks(lang) {
-    const links = document.querySelectorAll('a.back-button');
+    const links = document.querySelectorAll('a');
     links.forEach(link => {
-        const url = new URL(link.href);
-        url.searchParams.set('lang', lang); // `lang` parametresini ayarla veya güncelle
-        link.href = url.toString(); // Güncellenmiş URL'yi at
+        if (link.href && link.href.startsWith(window.location.origin)) {
+            const url = new URL(link.href);
+            url.searchParams.set('lang', lang);
+            link.href = url.toString();
+        }
+    });
+}
+
+// Handle language change
+function changeLanguage(lang) {
+    setLanguage(lang);
+    localStorage.setItem('language', lang);
+
+    // Update URL without page reload
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang);
+    window.history.pushState({}, '', url);
+
+    // Update all navigation links
+    updateNavLinks(lang);
+}
+function setSelector() {
+    const langSelect = document.querySelector('.language');
+    langSelect.addEventListener('change', (e) => {
+        changeLanguage(e.target.value);
     });
 }
