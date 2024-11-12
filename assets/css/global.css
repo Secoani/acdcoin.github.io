@@ -7,13 +7,15 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-
+.container {
+    max-width: 1480px;
+    margin-inline: auto;
+}
 header .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
-
 header {
     background: #333;
     color: #fff;
