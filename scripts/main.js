@@ -21,7 +21,7 @@ function expandMen(){
     });
 
     dropdowns.addEventListener('mouseout', () => {
-        navLinks.style.height = '165px';https://github.com/
+        navLinks.style.height = '165px';
     });
 }
 
