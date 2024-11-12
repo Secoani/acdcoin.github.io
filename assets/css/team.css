@@ -22,6 +22,7 @@ body {
     background-color: #fff;
     position: relative;
     border-radius: 10px;
+    margin-bottom: 125px;
 }
 .main-content .card {
     width: 300px;

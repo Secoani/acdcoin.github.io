@@ -52,6 +52,7 @@ main #description-container {
     justify-content: center;
     align-items: center;
     background-color: #232121;
+    margin-bottom: 105px;
 }
 
 main #description-container .description {
