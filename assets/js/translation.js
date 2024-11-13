@@ -2,7 +2,7 @@ let translations = {
     tr: {
         en: {
             //main elements
-            "Ana Sayfa" : "Home",
+            "Ana sayfa" : "Home",
             "Madencilik" : "Mining",
             "Hakkımızda" : "About Us",
             "İletişim" : "Contact",
@@ -25,6 +25,32 @@ let translations = {
             "Adres:" : "Address:",
             // team page elements
             "Baş Yönetici" : "CEO",
+            "Genel müdür" : "General Manager",
+            "Yazılım geliştirme" : "Software Developer",
+            "Araştırma ve Geliştirme Yöneticisi" : "Research and Development Manager",
+            "Sosyal Medya Yöneticisi" : "Social Media Manager",
+            // mining page elements
+            "ACDcoin Madenciliğine Bugün Başla" : "Start ACDcoin Mining Today!",
+            "Devrime katıl ve son teknoloji madencilik platformumuz ile ACDcoin madenciliğine başla." : "Join the revolution and start ACDcoin mining with our state-of-the-art mining platform.",
+            "Neden ACDcoin Madenciliği Yapmalısın?" : "Why Should You Mine ACDcoin?",
+            "ACDcoin, hızlı işlemler, düşük ücretler ve güvenli bir ağ sunan devrim niteliğinde bir kripto paradır. ACDcoin madenciliği yaparak, ağın güvenliğine ve merkeziyetsizliğine katkıda bulunurken ödüller kazanırsın." :
+            "ACDcoin is a revolutionary cryptocurrency that offers fast transactions, low fees, and a secure network. By mining ACDcoin, you contribute to the security and decentralization of the network while earning rewards.",
+            "Madenciliğe Nasıl Başlanır?" : "How to Start Mining?",
+            "ACDcoin madencilik yazılımını indir ve yükle." : "Download and install the ACDcoin mining software.",
+            "Bir madencilik havuzuna katıl veya solo madencilik yapmaya başla." : "Join a mining pool or start solo mining.",
+            "Cüzdan adresin ile madencilik yazılımını yapılandır." : "Configure the mining software with your wallet address.",
+            "Madenciliğe başla ve ACDcoin ödülleri kazan." : "Start mining and earn ACDcoin rewards.",
+            // transactions page elements
+            " ← Geri" : " ← Back",
+            "ACDcoin İşlem" : "ACDcoin Transaction",
+            "Gönderen Adresi" : "Sender Address",
+            "Alıcı Adresi" : "Recipient Address",
+            "Miktar" : "Amount",
+            "ACDcoin Gönder" : "Send ACDcoin",
+            // download page elements
+            "ACDcoin İndir" : "Download ACDcoin",
+            "ACDcoin, kullanıcılara güvenli ve yenilikçi bir dijital varlık deneyimi sunan bir kripto para birimidir." : "ACDcoin is a cryptocurrency that offers users a secure and innovative digital asset experience."
+            //
 
 
 
@@ -60,6 +86,7 @@ let translations = {
             // mining page elements jp
             "ACDcoin Madenciliğine Bugün Başlayın!" : "今日からACDcoinマイニングを始めましょう！",
             "Devrime katılın ve son teknoloji madencilik platformumuzla ACDcoin madenciliğine başlayın." : "革命に参加し、最新のマイニングプラットフォームでACDcoinマイニングを開始します。",
+            "Neden ACDcoin Madenciliği Yapmalısınız？" : "なぜACDcoinをマイニングする必要がありますか？",
         },
         
     },

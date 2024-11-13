@@ -38,23 +38,42 @@ function getCurrentLanguage() {
     return urlLang || localStorage.getItem("language") || "tr";
 }
 
+// Handle language change
+function changeLanguage(lang) {
+    localStorage.setItem("language", lang);
+
+    // Update URL without page reload
+    const url = new URL(window.location.href);
+    url.searchParams.set("lang", lang);
+    window.history.pushState({}, "", url);
+}
+
+function setSelector() {
+    const langSelect = document.querySelector(".language");
+    langSelect.addEventListener("change", (e) => {
+        changeLanguage(e.target.value);
+    });
+}
+
+function changeLanguage2(to) {
+    autoTranslateElements(to);
+    document.documentElement.lang = to;
+
+    changeLanguage(to);
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const currentLang = getCurrentLanguage();
 
     // Set the language selector value
     const langSelect = document.querySelector(".language");
-    if (langSelect) {
+    if (langSelect !== currentLang) {
         langSelect.value = currentLang;
     }
-
-    // Set the page content language
-    // setLanguage(currentLang);
-
     // Store the language preference
     localStorage.setItem("language", currentLang);
 
-    // Update all navigation links with the current language
-    updateNavLinks(currentLang);
+    changeLanguage2(currentLang);
 
     // Initialize backdrop click handler
     const backdrop = document.querySelector(".backdrop");
@@ -66,42 +85,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-// Update navigation links with language parameter
-function updateNavLinks(lang) {
-    const links = document.querySelectorAll("a");
-    links.forEach((link) => {
-        if (link.href && link.href.startsWith(window.location.origin)) {
-            const url = new URL(link.href);
-            url.searchParams.set("lang", lang);
-            link.href = url.toString();
-        }
-    });
-}
-
-// Handle language change
-function changeLanguage(lang) {
-    setLanguage(lang);
-    localStorage.setItem("language", lang);
-
-    // Update URL without page reload
-    const url = new URL(window.location.href);
-    url.searchParams.set("lang", lang);
-    window.history.pushState({}, "", url);
-
-    // Update all navigation links
-    updateNavLinks(lang);
-}
-
-function setSelector() {
-    const langSelect = document.querySelector(".language");
-    langSelect.addEventListener("change", (e) => {
-        changeLanguage(e.target.value);
-    });
-}
-
-
-function changeLanguage2(to) {
-    autoTranslateElements(to);
-    document.documentElement.lang = to;
-}
