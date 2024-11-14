@@ -25,8 +25,8 @@ let translations = {
             "Adres:" : "Address:",
             // team page elements
             "Baş Yönetici" : "CEO",
-            "Genel müdür" : "General Manager",
-            "Yazılım geliştirme" : "Software Developer",
+            "Genel Müdür" : "General Manager",
+            "Yazılım Geliştirici" : "Software Developer",
             "Araştırma ve Geliştirme Yöneticisi" : "Research and Development Manager",
             "Sosyal Medya Yöneticisi" : "Social Media Manager",
             // mining page elements
@@ -49,10 +49,18 @@ let translations = {
             "ACDcoin Gönder" : "Send ACDcoin",
             // download page elements
             "ACDcoin İndir" : "Download ACDcoin",
-            "ACDcoin, kullanıcılara güvenli ve yenilikçi bir dijital varlık deneyimi sunan bir kripto para birimidir." : "ACDcoin is a cryptocurrency that offers users a secure and innovative digital asset experience."
-            //
-
-
+            "ACDcoin, kullanıcılara güvenli ve yenilikçi bir dijital varlık deneyimi sunan bir kripto para birimidir." : "ACDcoin is a cryptocurrency that offers users a secure and innovative digital asset experience.",
+            // about page elements
+            "Hakkımızda" : "About Us",
+            "Bu proje, Ethereum blok zinciri üzerinde oluşturulmuş küçük bir tokenin işleyişini ve amacını keşfetmek amacıyla tasarlanmıştır. Token, bir okul projesi kapsamında geliştirilmiş olup, Ethereum ağı üzerinde dijital bir varlık olarak alınıp satılabilmektedir. Bu proje, temel konuları kapsamaktadır." :
+            "This project is designed to explore the operation and purpose of a small token created on the Ethereum blockchain. The token was developed as part of a school project and can be bought and sold as a digital asset on the Ethereum network. This project covers fundamental topics.",
+            "Vizyon:" : "Vision:",
+            "Bu projenin vizyonu, blockchain ve dijital varlıklar konusunda daha derin bir anlayışa sahip, yenilikçi düşünebilen ve teknolojik gelişmelere uyum sağlayabilen bireyler yetiştirmektir. Ethereum tabanlı bu proje sayesinde, öğrenciler blockchain teknolojisinin sınırlarını keşfederek dijital finansın geleceğinde söz sahibi olmalarını sağlayacak beceriler kazanacaktır." :
+            "The vision of this project is to educate individuals who have a deeper understanding of blockchain and digital assets, can think innovatively, and adapt to technological developments. Through this Ethereum-based project, students will gain the skills to explore the limits of blockchain technology and have a say in the future of digital finance.",
+            "Misyon:" : "Mission:",
+            "Bu projenin misyonu, öğrencilere blockchain teknolojisinin temel prensiplerini öğretmek ve Ethereum gibi merkeziyetsiz platformlarda token geliştirme konusunda uygulamalı deneyim kazandırmaktır. Bu proje, öğrencilerin dijital varlıklar konusunda bilgi birikimini artırarak, güvenli ve etkili bir şekilde token oluşturmayı öğrenmelerini hedeflemektedir." :
+            "The mission of this project is to teach students the basic principles of blockchain technology and provide practical experience in developing tokens on decentralized platforms such as Ethereum. This project aims to increase students' knowledge of digital assets and teach them how to create tokens securely and effectively.",
+            
 
         },
         jp: {
