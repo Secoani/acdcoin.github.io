@@ -9,9 +9,7 @@ window.addEventListener("resize", () => {
 
 function toggleMenu() {
     const navLinks = document.querySelector(".nav-links");
-    const backdrop = document.querySelector(".backdrop");
     navLinks.classList.toggle("show");
-    backdrop.classList.toggle("active");
 }
 
 function expandMen() {
@@ -29,6 +27,7 @@ function expandMen() {
     backdrop.addEventListener("click", () => {
         backdrop.classList.remove("active");
     });
+    
 }
 
 // Get language from URL or localStorage
