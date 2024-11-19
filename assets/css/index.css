@@ -56,7 +56,7 @@ main #description-container {
 }
 
 main #description-container .description {
-    width: 50%;
+    width: 60%;
     height: 200px;
     background-color: #fff;
     border-radius: 5px;
@@ -88,6 +88,9 @@ main #description-container .description button {
 }
 main #description-container .description button:hover {
     background-size: 100%;
+}
+main .description {
+    text-align: center;
 }
 @media (max-width: 768px) {
     h1 {
