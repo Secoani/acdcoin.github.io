@@ -60,6 +60,7 @@ const translations = {
             "ACDcoin, kullanıcılara güvenli ve yenilikçi bir dijital varlık deneyimi sunan bir kripto para birimidir.": "ACDcoin is a cryptocurrency that offers users a secure and innovative digital asset experience.",
 
             // About page
+            " ← Geri": " ← Back",
             "Hakkımızda": "About Us",
             "Bu proje, Ethereum blok zinciri üzerinde oluşturulmuş küçük bir tokenin işleyişini ve amacını keşfetmek amacıyla tasarlanmıştır. Token, bir okul projesi kapsamında geliştirilmiş olup, Ethereum ağı üzerinde dijital bir varlık olarak alınıp satılabilmektedir. Bu proje, temel konuları kapsamaktadır.": "This project is designed to explore the operation and purpose of a small token created on the Ethereum blockchain. The token was developed as part of a school project and can be bought and sold as a digital asset on the Ethereum network. This project covers fundamental topics.",
             "Vizyon:": "Vision:",

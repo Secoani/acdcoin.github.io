@@ -70,7 +70,7 @@ header nav .dropdown {
     height: 60px;
     position: relative;
     right: 10px;
-    z-index: 100;
+    z-index: 999;
 }
 header .dropdown .box {
     border-radius: 4px;
@@ -83,6 +83,13 @@ header .dropdown .box .element {
     top: 10px;
     margin-inline: auto;
 }
+header .dropdown .box .element a{
+    display: block;
+}
+header .dropdown .box .element a:nth-last-of-type(2){
+    margin-bottom: 10px;
+}
+
 
 
 header nav .dropdowns:hover .dropdown {
@@ -165,10 +172,18 @@ footer .language:hover {
         width: 100%;
     }
     header nav.dropdown .element a{
-        position: relative;
-        color: #fff;
-        z-index: 100;
-        background-color: #fff;
-        display: block;
+      position: relative;
+      color: #fff;
+      z-index: 100;
+      background-color: #fff;
+      display: block;
     }
+
+    header nav .dropdown .box{
+        position: relative;
+        top: -10px;
+        left: 15px;
+        margin: auto;
+    }
+
 }
